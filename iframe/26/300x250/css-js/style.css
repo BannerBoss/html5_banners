@@ -1,0 +1,151 @@
+/* Reset */
+*{
+    margin: 0; 
+    padding: 0;
+    
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+}
+img {
+	border: 0;
+	-webkit-transform: rotateZ( 0.02deg);
+	-ms-transform: rotateZ( 0.02deg);
+	-o-transform: rotateZ( 0.02deg);
+	transform: rotateZ( 0.02deg);	
+}
+
+a{
+    width:300px;
+    height:250px;
+    top:0;
+    left:0;
+}
+/* Container */
+#wrapper{
+	width: 300px;
+	height: 250px;
+	background:#FFF;
+	overflow: hidden;
+    border: 1px solid #666666;
+    top: 0;
+	left: 0;
+	opacity: 0;
+	cursor: pointer;
+	position:absolute;
+}
+#wrapper *{
+	position:absolute
+}
+
+#bg{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+#kid{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+}
+
+#logo{
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 10;
+}
+
+#cta{
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+#crown{
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+#txt1{
+    top: 0;
+    left: 0;
+    z-index: 4; 
+}
+#icon1{
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+#icon2{
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+#icon3{
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+#product{
+    top: 0;
+    left: 0;
+    z-index: 7;
+}
+#bubble{
+    top: 0;
+    left: 0;
+    z-index: 7;
+}
+
+.ie-fallback{
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 999;
+}
+
+#stars li {
+    list-style: outside none none;
+    z-index: 2;
+    opacity: 0;
+    width: 29px;
+    height: 29px;
+}
+
+#stars li:nth-child(1) {
+    left: 5px;
+    top: 35px;
+    webkit-animation: star 6s 2.5s linear forwards infinite;
+    animation: star 6s 2s linear forwards infinite;
+}
+
+#stars li:nth-child(2) {
+    left: 100px;
+    top: 25px;
+    webkit-animation: star 6s 3s linear forwards infinite;
+    animation: star 6s 2.5s linear forwards infinite;
+}
+
+#stars li:nth-child(3) {
+    left: 95px;
+    top: 50px;
+    webkit-animation: star 6s 3.5s linear forwards infinite;
+    animation: star 6s 2.5s linear forwards infinite;
+}
+
+
+/* Star Animation */
+@-webkit-keyframes star {
+    0%, 20%, 100%   { -webkit-transform:  rotate(0deg); opacity: 0.5; }
+    60%, 80%        { -webkit-transform:  rotate(180deg); opacity: 1; }
+}
+@keyframes star {
+    0%, 20%, 100%   { transform:  rotate(0deg); opacity: 0.5; }
+    60%, 80%        { transform:  rotate(180deg); opacity: 1; }
+}

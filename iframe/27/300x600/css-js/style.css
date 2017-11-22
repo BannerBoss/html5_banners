@@ -1,0 +1,204 @@
+/*-------------------------------------
+    Reset
+---------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+#banner * {
+  position: absolute;
+}
+
+#banner br  {
+  position: static;
+}
+
+
+img{
+  border: none;
+}
+
+/*-------------------------------------
+    Layout
+---------------------------------------*/
+
+#ad {
+  width: 300px;
+  height: 600px;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#banner {
+  position: absolute;
+  display: block;
+  background: #ffffff;
+  width: 300px;
+  height: 600px;
+  overflow: hidden;
+  cursor: pointer;
+  visibility: hidden;
+  border: 1px solid #666;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clicktag {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.clicktag img {
+  border: none;
+  outline: none;
+}
+
+#common, #frame_one, #frame_two, #frame_three, #frame_four, #frame_five{
+  width: 100%;
+  height: 100%;
+}
+
+/*-------------------------------------
+    Common
+---------------------------------------*/
+.logo{
+  z-index: 5;
+}
+
+.clickarea {
+  width: 72px;
+  height: 12px;
+  top: 8px;
+  left: 8px;
+  z-index: 15;
+}
+
+
+.disclaimer {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: #000;
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.disclaimer p {
+  font-family: Arial,Helvetica,sans-serif; 
+  overflow: hidden; 
+  word-break: normal;
+  font-size: 10px;
+  line-height: 12px;
+  padding: 32px 14px 10px;
+}
+
+
+/*-------------------------------------
+    Frame One
+---------------------------------------*/
+#frame_one {
+  background: #3398CE;
+  z-index: 4;
+}
+
+.circle1 {
+  width: 205px;
+  height: 205px;
+  background: #fff;
+  border-radius: 50%;
+  top: 207px;
+  left: 47px;
+  z-index: 3;
+}
+
+.circle2 {
+  width: 245px;
+  height: 245px;
+  background: #fff;
+  border-radius: 50%;
+  top: 187px;
+  left: 26px;
+  opacity: 0.4;
+  z-index: 2;
+}
+
+.circle3 {
+  width: 285px;
+  height: 285px;
+  background: #fff;
+  border-radius: 50%;
+  top: 167px;
+  left: 6px;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.car {
+  top: 58px;
+  z-index: 4;
+}
+
+
+/*-------------------------------------
+    Frame Two
+---------------------------------------*/
+
+#frame_two {
+  background: #dbdbdb;
+}
+
+
+
+/*-------------------------------------
+    Frame Three
+---------------------------------------*/
+
+
+
+
+/*-------------------------------------
+    Frame Four
+---------------------------------------*/
+
+#frame_four {
+  background: #3398CE;
+}
+
+.newlook {
+  z-index: 4;
+}
+
+
+/*-------------------------------------
+    Frame Four
+---------------------------------------*/
+
+#frame_five {
+  background: #EE8251;
+}
+
+/*-------------------------------------
+    Frame Five
+---------------------------------------*/
+.test {
+  left: 38px;
+  bottom: 50px;  
+}
+
+.brochure {
+  left: 119px;
+  bottom: 50px;
+}
+
+.pricing {
+  left: 199px;
+  bottom: 50px;
+}

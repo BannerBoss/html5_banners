@@ -1,0 +1,273 @@
+/*------------------------------------
+Reset
+------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	outline: 0;
+}
+
+html,body,br {
+	position: static;
+}
+
+/*------------------------------------
+Fonts
+------------------------------------*/
+@font-face {
+    font-family: 'stratum2bold';
+    src: url('fonts/stratum2-bold-webfont.woff2') format('woff2'),
+         url('fonts/stratum2-bold-webfont.woff') format('woff'),
+         url('fonts/stratum2-bold-webfont.ttf') format('truetype');       
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*------------------------------------
+Layout
+------------------------------------*/
+#banner {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-family: 'stratum2bold', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	width: 300px;
+	height: 250px;
+	background: url(../images/bg.jpg) no-repeat;
+	overflow: hidden;
+	cursor: pointer;
+	visibility: hidden;
+	-webkit-font-smoothing: antialiased;
+}
+/*------------------------------------
+Frame1
+------------------------------------*/
+.frame1 {
+	width: 100%;
+	height: 100%;
+}
+
+.frame1__text1__mask,
+.frame1__text2__mask,
+.frame1__text3__mask {
+	width: 450px;
+	height: 218px;
+	background: url(../images/frame1-text-bg.png) no-repeat;
+	left: 50%;
+	margin-left: -225px;
+}
+.frame1__text1__mask {
+	top: -96px;
+	z-index: 1;
+}
+.frame1__text2__mask {
+	top: -70px;
+	z-index: 2;
+}
+.frame1__text3__mask {
+	top: -96px;
+}
+
+.frame1__text1__copy,
+.frame1__text2__copy,
+.frame1__text3__copy {
+	text-shadow:rgb(255, 255, 255) 0px 0px 10px, 
+				rgb(255, 255, 255) 0px 0px 20px, 
+				rgb(255, 255, 255) 0px 0px 30px, 
+				rgb(255, 255, 255) 0px 0px 40px,
+				rgb(255, 255, 255) 0px 0px 50px,
+				rgb(255, 255, 255) 0px 0px 60px, 
+				rgb(255, 255, 255) 0px 0px 70px, 
+				rgb(255, 255, 255) 0px 0px 80px,
+				rgb(255, 255, 255) 0px 0px 90px, 
+				rgb(255, 255, 255) 0px 0px 100px;
+}
+.frame1__text1__copy {
+	top: 20px;
+	left: 25px;
+	font-size: 24px;
+	z-index: 3;
+}
+.frame1__text2__copy {
+	top: 44px;
+	left: 25px;
+	font-size: 28px;
+	z-index: 3;
+}
+.frame1__text3__copy {
+	top: 18px;
+	left: 10px;
+	font-size: 20px;
+	line-height: 18px;
+}
+
+
+/*------------------------------------
+Frame2
+------------------------------------*/
+.frame2 {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.6);
+}
+/* style for frame 2 logo*/
+.frame2__logo_nhl-16 {
+	top: 18px;
+	left: 4%;
+	/*margin-left: -64px;*/
+}
+.frame2__logo_nhl {
+	width: 35px;
+	left: 13px;
+	bottom: 65px;
+}
+.frame2__logo_nhl-pa {
+	width: 35px;
+	left: 55px;
+	bottom: 65px;
+}
+.frame2__logo_shl {
+	width: 35px;
+	right: 55px;
+	bottom: 65px;
+}
+.frame2__logo_age12 {
+	width: 35px;
+	right: 13px;
+	bottom: 65px;
+}
+.frame2__logo-xbox{
+    bottom: 0px;
+}
+
+/*style for frame 2 text*/
+.frame2__text1,
+.frame2__text2,
+.frame2__text3 {
+	width: 100%;
+	font-size: 24px;
+}
+.frame2__text1 {
+	top: 10px;
+	left: 123px;
+}
+.frame2__text2 {
+	top: 35px;
+	left: 129px;
+}
+.frame2__text3 {
+	top: 65px;
+	left: 165px;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+
+/*style for frame 2 cta*/
+.frame2__cta {
+	height: 28px;
+	width: 114px;
+	bottom: 102px;
+	left: 50%;
+	margin-left: -57px;
+}
+.frame2__cta__bg {
+	width: 100%;
+	height: 100%;
+	background: #d5171a;
+	overflow: hidden;
+	-webkit-transform: skew(-20deg);
+	-moz-transform: skew(-20deg);
+	-0-transform: skew(-20deg);
+	-ms-transform: skew(-20deg);
+	transform: skew(-20deg);
+}
+.frame2__cta__text {
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	line-height: 28px;
+}
+.frame2__cta__glossy-effect {
+	height: 110px;
+	top: 50%;
+	margin-top: -55px;
+	opacity: 0.5;
+	-webkit-transform: translateX(-110px);
+	-moz-transform: translateX(-110px);
+	-o-transform: translateX(-110px);
+	transform: translateX(-110px);
+}
+
+/*Style for frame 2 hover effect */
+#banner:hover .frame2__cta, 
+.fram2__cta--animate {
+	-webkit-animation: zoomInOut .2s linear;
+	-moz-animation: zoomInOut .2s linear;
+	-o-animation: zoomInOut .2s linear;
+	animation: zoomInOut .2s linear;
+}
+#banner:hover .frame2__cta__glossy-effect,
+.fram2__cta--animate .frame2__cta__glossy-effect {
+	-webkit-animation: shiningLeftToRight .2s linear;
+	-moz-animation: shiningLeftToRight .2s linear;
+	-o-animation: shiningLeftToRight .2s linear;
+	animation: shiningLeftToRight .2s linear;
+}
+
+.clicktag {
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+}
+
+.clicktag img {
+	border: none;
+	outline: none;
+}
+
+/*------------------------------------
+Keyframe rules fro CTA hover effect
+------------------------------------*/
+@-webkit-keyframes zoomInOut {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(1.3); }
+	100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes zoomInOut {
+	0% { -moz-transform: scale(1); }
+	50% { -moz-transform: scale(1.3); }
+	100% { -moz-transform: scale(1); }
+}
+@-o-keyframes zoomInOut {
+	0% { -o-transform: scale(1); }
+	50% { -o-transform: scale(1.3); }
+	100% { -o-transform: scale(1); }
+}
+@keyframes zoomInOut {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.3); }
+	100% { transform: scale(1); }
+}
+
+@-webkit-keyframes shiningLeftToRight {
+	0% { -webkit-transform: translateX(-110px); }
+	100% { -webkit-transform: translateX(110px); }
+}
+@-moz-keyframes shiningLeftToRight {
+	0% { -moz-transform: translateX(-110px); }
+	100% { -moz-transform: translateX(110px); }
+}
+@-o-keyframes shiningLeftToRight {
+	0% { -o-transform: translateX(-110px); }
+	100% { -o-transform: translateX(110px); }
+}
+@keyframes shiningLeftToRight {
+	0% { transform: translateX(-110px); }
+	100% { transform: translateX(110px); }
+}

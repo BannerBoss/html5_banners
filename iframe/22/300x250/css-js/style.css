@@ -1,0 +1,137 @@
+/*-------------------------------------
+    Reset
+---------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+#banner * {
+  position: absolute;
+}
+
+#banner br  {
+  position: static;
+}
+
+img{
+  border: none;
+}
+
+/*-------------------------------------
+    Layout
+---------------------------------------*/
+
+#ad {
+  width: 300px;
+  height: 250px;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#banner {
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  cursor: pointer;
+  visibility: hidden;
+  border: 1px solid #666;
+  background: url(../images/bg01.png) no-repeat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.clicktag {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.clicktag img {
+  border: none;
+  outline: none;
+}
+
+#frame_one, #frame_two{
+  width: 300px;
+  height: 250px;
+}
+
+#banner *{ 
+  -webkit-animation-play-state: paused!important; 
+  animation-play-state: paused!important;
+}
+
+#banner.is_visible *{ 
+  -webkit-animation-play-state: running!important; 
+  animation-play-state: running!important;
+}
+
+/* ----------------------- Frame One -----------------------*/
+#frame_one .ray{
+    width: 250px; 
+    height: 200px;
+    background-image: url(../images/tween.png); 
+    z-index: 20; 
+    left: 10px;
+    top: 8px;
+    -webkit-transform: scale(1.8);
+            transform: scale(1.8); 
+    -webkit-animation: ray 1s  steps(9) infinite;
+            animation: ray 1s  steps(9) infinite;
+}
+
+#frame_one .movie {
+  top: -52px;
+  left: -223px;
+  opacity: 0;
+}
+
+#frame_one .screen {
+  top: -102px;
+  left: -105px;
+}
+
+
+/* ----------------------- Frame Two -----------------------*/
+#frame_two .projector {
+  left: 63px;
+  -webkit-transform: scale(.68);
+          transform: scale(.68);
+}
+
+#frame_two .intel {
+  z-index: 10;
+}
+
+
+/* ----------------------- Reply button -----------------------*/
+#replay { z-index: 110; }
+
+.replay {
+  display: none;
+  opacity: 0;
+  left: 9px;
+  bottom: 9px;  
+  cursor: pointer;  
+}
+
+
+/* ----------------------- Animation -----------------------*/
+@-webkit-keyframes ray{
+    0% {background-position: 0px 0px; opacity: 0; }
+    1% {opacity: 1; }
+    100% {background-position: -2250px 0px; opacity: 1; }
+}
+@keyframes ray{
+    0% {background-position: 0px 0px; opacity: 0; }
+    1% {opacity: 1; }
+    100% {background-position: -2250px 0px; opacity: 1; }
+}

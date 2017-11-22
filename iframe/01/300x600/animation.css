@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+
+/*******animation*****/
+
+@-webkit-keyframes rotater_anim{
+	from{
+			transform: rotate(0deg);
+	}
+	to{
+			transform: rotate(65deg);
+	}
+}
+@keyframes rotater_anim{
+	from{
+			transform: rotate(0deg);
+	}
+	to{
+			transform: rotate(65deg);
+	}
+}
+
+@-webkit-keyframes ctrl_anim{
+	from{
+			transform: rotate(0deg);
+	}
+	to{
+			transform: rotate(-65deg);
+	}
+}
+@keyframes ctrl_anim{
+	from{
+			transform: rotate(0deg);
+	}
+	to{
+			transform: rotate(-65deg);
+	}
+}
+
+@-webkit-keyframes rotater_anim2{
+	from{
+			transform: rotate(0deg);
+	}
+	to{
+			transform: rotate(-53deg);
+	}
+}
+@keyframes rotater_anim2{
+	from{
+			transform: rotate(0deg);
+	}
+	to{
+			transform: rotate(-53deg);
+	}
+}
+@-webkit-keyframes ctrl2_anim{
+	from{
+			transform: rotate(deg);
+	}
+	to{
+			transform: rotate(55deg);
+	}
+}
+@keyframes ctrl2_anim{
+	from{
+			transform: rotate(0deg);
+	}
+	to{
+			transform: rotate(55deg);
+	}
+}
+
+@-webkit-keyframes FadeIn{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+@keyframes FadeIn{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+
+@-webkit-keyframes FadeOut{
+	from{
+		opacity:1;
+	}
+	to{
+		opacity:0;
+	}
+}
+@keyframes FadeOut{
+	from{
+		opacity:1;
+	}
+	to{
+		opacity:0;
+	}
+}
+
+@-webkit-keyframes rotater_slideIn{
+	from{
+		left:300px;
+	}
+	to{
+		left:100px;
+	}
+}
+@keyframes rotater_slideIn{
+	from{
+		left:300px;
+	}
+	to{
+		left:100px;
+	}
+}
+
+@-webkit-keyframes rotater_slideOut{
+	from{
+		left:200px;
+	}
+	to{
+		left:400px;
+	}
+}
+@keyframes rotater_slideOut{
+	from{
+		left:200px;
+	}
+	to{
+		left:400px;
+	}
+}
+
+@-webkit-keyframes slider_slideIn{
+	from{
+		left:305px;
+	}
+	to{
+		left:160px;
+	}
+}
+@keyframes slider_slideIn{
+	from{
+		left:305px;
+	}
+	to{
+		left:160px;
+	}
+}
+
+@-webkit-keyframes slider_slideOut{
+	from{
+		left:160px;
+	}
+	to{
+		left:305px;
+	}
+}
+@keyframes slider_slideOut{
+	from{
+		left:160px;
+	}
+	to{
+		left:305px;
+	}
+}
+
+@-webkit-keyframes textFadeIn{
+	from{
+		opacity:0;top: 95px;
+	}
+	to{
+		opacity:1;top: 80px;
+	}
+}
+@keyframes textFadeIn{
+	
+	from{
+		opacity:0;top: 95px;
+	}
+	to{
+		opacity:1;top: 80px;
+	}
+	
+}
+@-webkit-keyframes textFadeOut{
+	
+	from{
+		opacity:1;top: 80px;
+	}
+	to{
+		opacity:0;top: 65px;
+	}
+}
+@keyframes textFadeOut{
+	
+	from{
+		opacity:1;top: 80px;
+	}
+	to{
+		opacity:0;top: 65px;
+	}
+}
+@-webkit-keyframes text4FadeIn{
+	from{
+		opacity:0;top: 100px;
+	}
+	to{
+		opacity:1;top: 84px;
+	}
+}
+@keyframes text4FadeIn{
+	from{
+		opacity:0;top: 100px;
+	}
+	to{
+		opacity:1;top: 84px;
+	}
+}
+@-webkit-keyframes text4FadeOut{
+	from{
+		opacity:1;top: 84px;
+	}
+	to{
+		opacity:0; top: 70px;
+	}
+}
+@keyframes text4FadeOut{
+	from{
+		opacity:1;top: 84px;
+	}
+	to{
+		opacity:0; top: 70px;
+	}
+}
+
+/* CSS Document */
+

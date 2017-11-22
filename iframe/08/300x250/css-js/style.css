@@ -1,0 +1,90 @@
+/* Reset */
+*{
+    margin: 0; 
+    padding: 0;
+    
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+}
+img {
+	border: 0;
+	-webkit-transform: rotateZ( 0.02deg);
+	-ms-transform: rotateZ( 0.02deg);
+	-o-transform: rotateZ( 0.02deg);
+	transform: rotateZ( 0.02deg);	
+}
+
+a{
+    width:300px;
+    height:250px;
+    top:0;
+    left:0;
+}
+
+html, div, br{position: static;}
+/* Container */
+#wrapper{
+	width: 300px;
+	height: 250px;
+	background: #FFF;
+	overflow: hidden;
+    border: 1px solid #666666;
+    top: 0;
+	left: 0;
+	opacity: 1;
+	cursor: pointer;
+	position: absolute;
+}
+#wrapper *{
+	position: absolute
+}
+
+#logo{
+    opacity: 1;
+    z-index: 35;
+    left: 10px;
+    top: 10px;
+}
+#shoes{
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#txt1{
+    left: 165px;
+    top: 23px;
+    z-index: 11; 
+}
+#txt2{
+    z-index: 12;
+    left: 165px;
+    top: 45px;
+}
+#bgColor{
+    top: 0;
+    left: 0;
+    z-index: 14;
+}
+#txt3{
+    z-index: 15;
+    left: 10px;
+    top: 62px;
+}
+#product{
+    z-index: 17;
+    left: 182px;
+    top: 32px;
+}
+#cta{
+    z-index: 16;
+    left: 10px;
+    top: 168px;
+}
+.ie-fallback{
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 999;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>300x250</title>
+	<meta name="ad.size" content="width=300,height=250">
+	<link rel="stylesheet" href="css/style.css"/> 
+	<script type="text/javascript" charset="utf-8" >var clickTag = "";</script>
+    
+    <script type="text/javascript">
+        var scrolling = null;
+     
+        function scroll_up() {
+            var d = document.getElementById('scroller');
+     
+            d.scrollTop = d.scrollTop - 5;
+     
+            scrolling = window.setTimeout(function() {
+                scroll_up();
+            }, 100);
+        }
+     
+        function scroll_down() {
+            var d = document.getElementById('scroller');
+     
+            d.scrollTop = d.scrollTop + 5;
+     
+            scrolling = window.setTimeout(function() {
+                scroll_down();
+            }, 100);
+        }
+     
+        function stop_scroll() {
+            window.clearTimeout(scrolling);
+        }
+    </script>
+
+</head>
+
+<body>
+        <a href="javascript:window.open(clickTag);">
+            <div id="ad">
+
+                <div id="banner">
+                    <!--[if lte IE 9]>
+                        <img class="ie_fallback" alt="fallback" title="fallback" src="ie_fallback.jpg"> 
+                    <![endif]-->
+
+                    <!-- start frame1 -->       
+                    <div id="frame1">
+                        <img class="frame_one_image" src="images/frame_one_image.jpg" alt="First background">
+                        <div class="frame1_Copy_Box">
+                            <img class="frame_one_copy_one" src="images/frame_one_copy_one1.png" alt="">
+                            <img class="frame_one_copy_two" src="images/frame_one_copy_two2.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- start frame2 -->
+                    <div id="frame2">
+                        <img class="frame_two_pak" src="images/frame_two_pak.png" alt="Second background">
+                    </div>
+
+                    <!-- start frame3 -->
+                    <div id="frame3">
+                        <img class="frame_three_image" src="images/frame_three_image.jpg" alt="Third background">
+                    </div>
+
+                    <!-- start frame4 -->
+                    <div id="frame4">
+                        <img class="frame_four_pak" id="packshot"  src="images/frame_four_pak.png" alt="Four background">
+                         <img class="frame_four_copy_one" id="first_copy" src="images/frame_four_copy_one.png" alt="MIEUX CONNAÎTRE LE RHUME">
+                        <img class="frame_four_copy_two" id="second_copy" src="images/frame_four_copy_two.png" alt="POUR MIEUX LE MAÎTRISER">
+                        
+                        <div class="frame4_cta">
+                            <img class="frame4_cta_copy" src="images/frame4_cta_copy.png" alt="www.actifed.fr">
+                            <img class="frame4_cta_light" src="images/cta_light.png" alt="www.actifed.fr">
+                        </div>
+
+                        <img class="frame_four_legals" id="frame_four_legals" src="images/frame_four_legals.png" alt="">
+                    </div>       
+
+                    <div class="disclaimer">
+                        <div class="legalsExpanded">
+                            <div class="centerArrow up" onmouseover="scroll_up();" onmouseout="stop_scroll();"> <img src="images/top-srroll.png" alt=""> </div>
+                            <div id="scroller">
+                                <img src="images/product.png" alt="" class="product">
+                                <p class="top">Médicaments contre les symptômes du rhume.Pas avant 15 ans. Ne pas utiliser chez la femme enceinte. Demander conseil à votre pharmacien.</p>
+                                <p>Lire attentivement la notice. Contient un vasoconstricteur (pseudoéphédrine) pour diminuer la sensation de nez bouché. Ne pas associer avec d’autres médicaments qui en contiennent que ce soit par voie nasale ou par voie orale. Si vous êtes atteints de certaines maladies cardio-vasculaires et notamment d’hypertension artérielle,demandez un avis médical. Contient du paracétamol contre les maux de tête et/ou la fièvre et un antihistaminique à effet sédatif. Ne pas associer avec d’autres médicaments qui en contiennent. Si les symptômes persistent plus de 4 jours, consultez votre médecin. M14AC195 14/07/6 020 633 2/GP/002 JJSBF SAS au capital de 153.285.948 €. RCS Nanterre : 479 824 724. Siège social : 1 rue Camille Desmoulins - 92130 Issy-les-Moulineaux.</p>
+                            </div>
+                            <div class="centerArrow down" onmouseover="scroll_down();" onmouseout="stop_scroll();"> <img src="images/btm-srroll.png" alt=""> </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- close banner -->
+
+            </div>
+            <!-- close ad -->
+        </a>
+        
+</body>
+</html>

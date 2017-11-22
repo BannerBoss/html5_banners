@@ -1,0 +1,436 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td  {
+  margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;
+}
+
+body { line-height: 1; font-family: sans-serif; user-select: none; -ms-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none;}
+.container {box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; width: 300px; height: 250px; display: block; visibility: visible; overflow: hidden; position: relative; background-color: #0078D7}
+
+.ms-logo { top: 10px; left:10px; position: absolute;}
+
+/*================= masking Style =================*/
+.left-masking {
+  width: 150px;
+  height: 80px;
+  top: 80px;
+  left: -250px;
+  z-index: 1;
+  position: absolute;
+  background-color: #0078D7;
+  -webkit-animation: left-masking-in .8s ease-in 1.2s forwards, left-masking-out .8s ease-in-out 2.2s forwards, left-masking-in .8s ease-in 3.5s forwards, fadeout .1s forwards 4.8s;
+     -moz-animation: left-masking-in .8s ease-in 1.2s forwards, left-masking-out .8s ease-in-out 2.2s forwards, left-masking-in .8s ease-in 3.5s forwards, fadeout .1s forwards 4.8s;
+       -o-animation: left-masking-in .8s ease-in 1.2s forwards, left-masking-out .8s ease-in-out 2.2s forwards, left-masking-in .8s ease-in 3.5s forwards, fadeout .1s forwards 4.8s;
+          animation: left-masking-in .8s ease-in 1.2s forwards, left-masking-out .8s ease-in-out 2.2s forwards, left-masking-in .8s ease-in 3.5s forwards, fadeout .1s forwards 4.8s;
+}
+
+.right-masking {
+  width: 150px;
+  height: 80px;
+  top: 80px;
+  right: -250px;
+  z-index: 1;
+  position: absolute;
+  background-color: #0078D7;
+  -webkit-animation: right-masking-in .8s ease-in 1.2s forwards, right-masking-out .8s ease-in-out 2.2s forwards, right-masking-in .8s ease-in 3.5s forwards, fadeout .1s forwards 4.8s;
+     -moz-animation: right-masking-in .8s ease-in 1.2s forwards, right-masking-out .8s ease-in-out 2.2s forwards, right-masking-in .8s ease-in 3.5s forwards, fadeout .1s forwards 4.8s;
+       -o-animation: right-masking-in .8s ease-in 1.2s forwards, right-masking-out .8s ease-in-out 2.2s forwards, right-masking-in .8s ease-in 3.5s forwards, fadeout .1s forwards 4.8s;
+          animation: right-masking-in .8s ease-in 1.2s forwards, right-masking-out .8s ease-in-out 2.2s forwards, right-masking-in .8s ease-in 3.5s forwards, fadeout .1s forwards 4.8s;  
+}
+/*================= masking Style =================*/
+
+/*================= Frame 1 Style =================*/
+.onedrive-logo{
+  top: 100px;
+  left: 24px;
+  position: absolute;
+  -webkit-animation: fadeout .1s ease-out 2.2s forwards;
+     -moz-animation: fadeout .1s ease-out 2.2s forwards;
+       -o-animation: fadeout .1s ease-out 2.2s forwards;
+          animation: fadeout .1s ease-out 2.2s forwards;
+}
+
+.win-logo{
+  bottom: 10px;
+  right: 10px;
+  position: absolute;
+}
+
+
+.copy_1 {
+  left: 85px;
+  top: 100px;
+  position: absolute;
+  opacity: 0; 
+  -webkit-animation: fadein .1s ease-out 2.2s forwards, fadeout .1s forwards 4.5s; 
+     -moz-animation: fadein .1s ease-out 2.2s forwards, fadeout .1s forwards 4.5s; 
+       -o-animation: fadein .1s ease-out 2.2s forwards, fadeout .1s forwards 4.5s; 
+          animation: fadein .1s ease-out 2.2s forwards, fadeout .1s forwards 4.5s;
+}
+
+.copy_bottom {
+  bottom: 10px;
+  right: 95px;
+  opacity: 0;
+  position: absolute;
+  -webkit-animation: copy_bottom 0.4s ease-in-out .3s forwards 1;
+     -moz-animation: copy_bottom 0.4s ease-in-out .3s forwards 1;
+       -o-animation: copy_bottom 0.4s ease-in-out .3s forwards 1;
+          animation: copy_bottom 0.4s ease-in-out .3s forwards 1;
+}
+/*================= Frame 1 Style =================*/
+
+/*================= Frame 2 Style =================*/
+.roket {
+  position: absolute;
+  top: 190px;
+  left: 218px;  
+  z-index: 9;
+  opacity: 0;
+  -webkit-animation: fadein .1s forwards 5s, fly-roket 1s forwards 8s, fly-roket-to-cloud .7s forwards 9.4s;
+     -moz-animation: fadein .1s forwards 5s, fly-roket 1s forwards 8s, fly-roket-to-cloud .7s forwards 9.4s;
+       -o-animation: fadein .1s forwards 5s, fly-roket 1s forwards 8s, fly-roket-to-cloud .7s forwards 9.4s;
+          animation: fadein .1s forwards 5s, fly-roket 1s forwards 8s, fly-roket-to-cloud .7s forwards 9.4s;
+}
+
+.roket-top {
+  left:-85px;
+  top: -98px;
+  position: absolute;
+  -webkit-transform: rotate(-180deg);
+     -moz-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+       -o-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-animation: roket-top .3s forwards 7s;
+     -moz-animation: roket-top .3s forwards 7s;
+       -o-animation: roket-top .3s forwards 7s;
+          animation: roket-top .3s forwards 7s;
+}
+
+.roket-body-masking {
+  width: 88px;
+  height: 139px;
+  position: absolute;
+  top: 52px;
+  right: 79px;
+  opacity: 0;
+  z-index: 10;
+  background-color: #0078D7; 
+  -webkit-animation: fadein .1s forwards 4.8s, roket-body-masking .5s forwards 5s, fadeout .1s forwards 7.3s; 
+     -moz-animation: fadein .1s forwards 4.8s, roket-body-masking .5s forwards 5s, fadeout .1s forwards 7.3s; 
+       -o-animation: fadein .1s forwards 4.8s, roket-body-masking .5s forwards 5s, fadeout .1s forwards 7.3s; 
+          animation: fadein .1s forwards 4.8s, roket-body-masking .5s forwards 5s, fadeout .1s forwards 7.3s;
+}
+
+.roket-body {
+  right: 0px;
+  bottom: -5px;
+  position: absolute;
+  -webkit-animation: fadein .1s forwards 5s;
+     -moz-animation: fadein .1s forwards 5s;
+       -o-animation: fadein .1s forwards 5s;
+          animation: fadein .1s forwards 5s;
+}
+
+
+.roket-right-masking {
+  width: 90px;
+  height: 117px;
+  right: 0px;
+  top: 73px;
+  z-index: 7;
+  opacity: 0;
+  position: absolute;
+  background-color: #0078D7;
+  -webkit-animation: fadein .1s forwards 5s, roket-right-masking .5s ease-in 5.5s forwards 1;
+     -moz-animation: fadein .1s forwards 5s, roket-right-masking .5s ease-in 5.5s forwards 1;
+       -o-animation: fadein .1s forwards 5s, roket-right-masking .5s ease-in 5.5s forwards 1;
+          animation: fadein .1s forwards 5s, roket-right-masking .5s ease-in 5.5s forwards 1;
+}
+
+.roket-stand {
+  right: 50px;
+  bottom: 57px;
+  z-index: 6;
+  position: absolute;
+  opacity: 0;
+  -webkit-animation: fadein .1s forwards 5.5s, tower-break .5s forwards 7.5s, roket_stand_to-bottom .5s forwards 8s;
+     -moz-animation: fadein .1s forwards 5.5s, tower-break .5s forwards 7.5s, roket_stand_to-bottom .5s forwards 8s;
+       -o-animation: fadein .1s forwards 5.5s, tower-break .5s forwards 7.5s, roket_stand_to-bottom .5s forwards 8s;
+          animation: fadein .1s forwards 5.5s, tower-break .5s forwards 7.5s, roket_stand_to-bottom .5s forwards 8s;
+}
+
+.roket-stand-right {
+  right: 10px;
+  bottom: 56px;
+  z-index: 6;
+  opacity: 0;
+  position: absolute;
+  -webkit-animation: fadein .1s forwards 5.5s, roket_stand_right_to-bottom .5s forwards 8s;
+     -moz-animation: fadein .1s forwards 5.5s, roket_stand_right_to-bottom .5s forwards 8s;
+       -o-animation: fadein .1s forwards 5.5s, roket_stand_right_to-bottom .5s forwards 8s;
+          animation: fadein .1s forwards 5.5s, roket_stand_right_to-bottom .5s forwards 8s;
+}
+
+.roket-stage-masking {
+  width: 167px;
+  height: 21px;
+  position: absolute;
+  right: 0px;
+  bottom: 40px;
+  background-color: #0078D7;
+  z-index: 11;
+  -webkit-animation: roket-stage-masking .5s ease-in 4.5s forwards 1;
+     -moz-animation: roket-stage-masking .5s ease-in 4.5s forwards 1;
+       -o-animation: roket-stage-masking .5s ease-in 4.5s forwards 1;
+          animation: roket-stage-masking .5s ease-in 4.5s forwards 1;
+}
+
+.roket-stage {
+  right: 0px;
+  bottom: 38px;
+  z-index: 10;
+  position: absolute;
+  -webkit-animation: roket_stage_to-bottom .5s forwards 8s;
+     -moz-animation: roket_stage_to-bottom .5s forwards 8s;
+       -o-animation: roket_stage_to-bottom .5s forwards 8s;
+          animation: roket_stage_to-bottom .5s forwards 8s;
+}
+
+.icon-rain-masking {
+  width: 35px;
+  height: 95px;
+  z-index: 4;
+  right: 90px;
+  bottom: 50px;
+  opacity: 0;
+  position: absolute;
+  background-color: #0078D7;
+  -webkit-animation: fadein .1s forwards 5.5s;
+     -moz-animation: fadein .1s forwards 5.5s;
+       -o-animation: fadein .1s forwards 5.5s;
+          animation: fadein .1s forwards 5.5s;
+}
+
+.icon-rain {
+  right: 91px;
+  position: absolute;
+  z-index: 3;
+  top: -260px;
+  -webkit-animation: icon-rain 1s ease-in 5.7s forwards, fadeout .1s forwards 7.3s;
+     -moz-animation: icon-rain 1s ease-in 5.7s forwards, fadeout .1s forwards 7.3s;
+       -o-animation: icon-rain 1s ease-in 5.7s forwards, fadeout .1s forwards 7.3s;
+          animation: icon-rain 1s ease-in 5.7s forwards, fadeout .1s forwards 7.3s;
+}
+
+.cloud {
+  right: -70px;
+  z-index: 13;
+  top: -904px;
+  opacity: 0;
+  position: absolute;
+  -webkit-animation: fadein .1s forwards 5.5s, cloud 1.8s ease-in 8s forwards;
+     -moz-animation: fadein .1s forwards 5.5s, cloud 1.8s ease-in 8s forwards;
+       -o-animation: fadein .1s forwards 5.5s, cloud 1.8s ease-in 8s forwards;
+          animation: fadein .1s forwards 5.5s, cloud 1.8s ease-in 8s forwards;
+
+}
+/*================= Frame 2 Style =================*/
+
+/*================= Frame 3 Style =================*/
+.copy_2 {
+  position: absolute;
+  top: 73px;
+  left: -150px;
+  -webkit-animation: copy-animation .5s forwards 5s;
+     -moz-animation: copy-animation .5s forwards 5s;
+       -o-animation: copy-animation .5s forwards 5s;
+          animation: copy-animation .5s forwards 5s;
+}
+
+.copy_3 {
+  position: absolute;
+  top: 100px;
+  left: -150px;
+  -webkit-animation: copy-third-animation .5s forwards 5.1s;
+     -moz-animation: copy-third-animation .5s forwards 5.1s;
+       -o-animation: copy-third-animation .5s forwards 5.1s;
+          animation: copy-third-animation .5s forwards 5.1s;
+}
+
+.copy_4 {
+  position: absolute;
+  top: 135px;
+  left: -150px;
+  -webkit-animation: copy-animation .5s forwards 5.2s;
+     -moz-animation: copy-animation .5s forwards 5.2s;
+       -o-animation: copy-animation .5s forwards 5.2s;
+          animation: copy-animation .5s forwards 5.2s;
+}
+
+.copy_5 {
+  position: absolute;
+  top: 155px;
+  left: -150px;
+  -webkit-animation: copy-animation .5s forwards 5.3s;
+     -moz-animation: copy-animation .5s forwards 5.3s;
+       -o-animation: copy-animation .5s forwards 5.3s;
+          animation: copy-animation .5s forwards 5.3s;
+}
+
+.zero {
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 50px;
+  color: white;
+  left: -150px;
+  top: 94px;
+  font-weight: bolder;
+  -webkit-animation: zero .5s forwards 5.2s, fadeout .1s forwards 5.82s;
+     -moz-animation: zero .5s forwards 5.2s, fadeout .1s forwards 5.82s;
+       -o-animation: zero .5s forwards 5.2s, fadeout .1s forwards 5.82s;
+          animation: zero .5s forwards 5.2s, fadeout .1s forwards 5.82s;
+}
+
+#gbcount {
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 50px;
+  color: white;
+  left: 6px;
+  top: 94px;
+  font-weight: bolder;
+}
+
+.flame {
+  top: -9px;
+  right: 18px;
+  position: absolute;
+  opacity: 0;
+  -webkit-animation: fadein .3s forwards 8s;
+     -moz-animation: fadein .3s forwards 8s;
+       -o-animation: fadein .3s forwards 8s;
+          animation: fadein .3s forwards 8s;
+}
+
+.smoke {
+  position: absolute;
+  left: -50px;
+  top: -10px;
+  opacity: 0;
+  -webkit-transform: rotate(10deg);
+     -moz-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+       -o-transform: rotate(10deg);
+          transform: rotate(10deg);
+  -webkit-animation: fadein .5s forwards 7.3s;
+     -moz-animation: fadein .5s forwards 7.3s;
+       -o-animation: fadein .5s forwards 7.3s;
+          animation: fadein .5s forwards 7.3s;
+}
+
+.smoke img {
+  position: absolute;
+  left: -8px;
+  z-index: 9999;
+  -webkit-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+       -o-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-animation: smoke .5s linear 7.3s infinite;
+     -moz-animation: smoke .5s linear 7.3s infinite;
+       -o-animation: smoke .5s linear 7.3s infinite;
+          animation: smoke .5s linear 7.3s infinite;
+}
+
+.smoke img + img{
+  position: absolute;
+  left: 18px;
+  z-index: 9999;
+  -webkit-transform: rotate(15deg);
+     -moz-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+       -o-transform: rotate(15deg);
+          transform: rotate(15deg);
+  -webkit-animation: smoke_b .5s linear 7.4s infinite;
+     -moz-animation: smoke_b .5s linear 7.4s infinite;
+       -o-animation: smoke_b .5s linear 7.4s infinite;
+          animation: smoke_b .5s linear 7.4s infinite;
+  
+}
+
+.smoke img + img + img{
+  position: absolute;  
+  left: 10px;
+  top: 30px;
+  z-index: 9999;
+  -webkit-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+       -o-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-animation: smoke_c .5s linear 7.5s infinite;
+     -moz-animation: smoke_c .5s linear 7.5s infinite;
+       -o-animation: smoke_c .5s linear 7.5s infinite;
+          animation: smoke_c .5s linear 7.5s infinite;
+  
+}
+
+.smoke img + img + img + img{
+  position: absolute;
+  left: 27px;
+  top: 20px;
+  z-index: 9999;
+  -webkit-transform: rotate(15deg);
+     -moz-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+       -o-transform: rotate(15deg);
+          transform: rotate(15deg);
+  -webkit-animation: smoke_d .5s linear 7.6s infinite;
+     -moz-animation: smoke_d .5s linear 7.6s infinite;
+       -o-animation: smoke_d .5s linear 7.6s infinite;
+          animation: smoke_d .5s linear 7.6s infinite;
+}
+/*================= Frame 3 Style =================*/
+
+/*================= Frame END Style =================*/
+.cloud-single {
+  right: 20px;
+  z-index: 12;
+  top: -100px;
+  position: absolute;
+  -webkit-animation: cloud-big .5s forwards 9s, fadeout .3s forwards 9.5s;
+     -moz-animation: cloud-big .5s forwards 9s, fadeout .3s forwards 9.5s;
+       -o-animation: cloud-big .5s forwards 9s, fadeout .3s forwards 9.5s;
+          animation: cloud-big .5s forwards 9s, fadeout .3s forwards 9.5s;
+}
+
+.cloud-single-with-icon {
+  right: 20px;
+  z-index: 13;
+  top: 68px;
+  opacity: 0;
+  position: absolute;
+  -webkit-animation: fadein .3s forwards 9.5s;
+     -moz-animation: fadein .3s forwards 9.5s;
+       -o-animation: fadein .3s forwards 9.5s;
+          animation: fadein .3s forwards 9.5s;
+}
+
+.cta-wraper {
+  position: absolute;
+  width: 90px;
+  height: 20px;
+  top: 177px;
+  left: 10px;
+  overflow: hidden;
+}
+.cta {
+  position: absolute;
+  left: -150px;
+  -webkit-animation: cta .7s forwards 9.5s;
+     -moz-animation: cta .7s forwards 9.5s;
+       -o-animation: cta .7s forwards 9.5s;
+          animation: cta .7s forwards 9.5s;
+}
+/*================= Frame END Style =================*/

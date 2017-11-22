@@ -1,0 +1,190 @@
+/* Mandatory CSS */
+
+body, div{
+  margin:0;
+  padding:0;
+}
+#content {
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 600px;
+  cursor: pointer;
+  z-index: 10;
+  border: 1px solid #272846;
+}
+.click {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #FFF;
+  background-color: rgba(255, 0, 0, 0);
+  z-index: 200;
+}
+
+/* Banner specific style */
+
+#content,
+#content * {
+  position: absolute;
+  box-sizing: border-box;
+}
+
+#content {
+  visibility: hidden;
+  overflow: hidden;
+}
+#fallback{
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+.background {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(banner_sprit.png);
+}
+    
+.copy1 {
+  left: 9;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(banner_sprit.png) -600px 0 ;
+}
+
+.copy2 {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(banner_sprit.png) -900px 0 ;
+}
+
+.logo {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(banner_sprit.png) -300px 0 ;
+}
+
+.button {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(banner_sprit.png) -1200px 0 ;
+}
+
+.button span {
+  width: 55px;
+  height: 20px;
+  right: 53px;
+  bottom: 21px;
+  background: url(banner_sprit.png) -1390px -207px;
+}
+
+.running {
+  left: 0;
+  top: 246px;
+  width: 200px;
+  height: 200px;
+  background: url(running_sprit.png) 0px 0;
+}
+
+.cta  {
+  width: 128px;
+  height: 37px;
+  background: #00bda0;
+  color: #fff;
+  line-height: 37px;
+  text-align: center;
+  font-size: 18px;
+  font-family: arial;
+  right: 85px;
+  bottom: 17px;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 19px;
+  border-radius: 19px;
+  font-weight: bold;
+  overflow: hidden;
+  opacity: 0;
+}
+.cta .start{
+	top: 0px;
+	left: 29px;
+}
+.cta .glossy-effect {
+  height: 110px;
+  top: 50%;
+  left: 0;
+  margin-top: -55px;
+  opacity: 0.5;
+  -webkit-transform: translateX(-110px) skew(30deg);
+  -moz-transform: translateX(-110px) skew(30deg);
+  -o-transform: translateX(-110px) skew(30deg);
+  transform: translateX(-110px) skew(30deg);
+}
+
+.cta.is-animate,
+#content:hover .cta {
+  -webkit-animation: zoomInOut .2s linear;
+  -moz-animation: zoomInOut .2s linear;
+  -o-animation: zoomInOut .2s linear;
+  animation: zoomInOut .2s linear;
+}
+
+.cta.is-animate .glossy-effect,
+#content:hover .cta  .glossy-effect{
+  -webkit-animation: shiningLeftToRight .2s linear;
+  -moz-animation: shiningLeftToRight .2s linear;
+  -o-animation: shiningLeftToRight .2s linear;
+  animation: shiningLeftToRight .2s linear;
+}
+
+/*------------------------------------
+Keyframe rules fro CTA hover effect
+------------------------------------*/
+@-webkit-keyframes zoomInOut {
+  0% { -webkit-transform: scale(1); }
+  50% { -webkit-transform: scale(1.3); }
+  100% { -webkit-transform: scale(1); }
+}
+@-moz-keyframes zoomInOut {
+  0% { -moz-transform: scale(1); }
+  50% { -moz-transform: scale(1.3); }
+  100% { -moz-transform: scale(1); }
+}
+@-o-keyframes zoomInOut {
+  0% { -o-transform: scale(1); }
+  50% { -o-transform: scale(1.3); }
+  100% { -o-transform: scale(1); }
+}
+@keyframes zoomInOut {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+@-webkit-keyframes shiningLeftToRight {
+  0% { -webkit-transform: translateX(-110px) skew(30deg); }
+  100% { -webkit-transform: translateX(110px) skew(30deg); }
+}
+@-moz-keyframes shiningLeftToRight {
+  0% { -moz-transform: translateX(-110px) skew(30deg); }
+  100% { -moz-transform: translateX(110px) skew(30deg); }
+}
+@-o-keyframes shiningLeftToRight {
+  0% { -o-transform: translateX(-110px) skew(30deg); }
+  100% { -o-transform: translateX(110px) skew(30deg); }
+}
+@keyframes shiningLeftToRight {
+  0% { transform: translateX(-110px) skew(30deg); }
+  100% { transform: translateX(110px) skew(30deg); }
+}

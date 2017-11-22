@@ -1,0 +1,283 @@
+
+/*-------------------------------------
+    Reset
+---------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+
+img {
+	border: none;
+}
+
+/*-------------------------------------
+    Layout
+---------------------------------------*/
+.is-paused * {
+	animation-play-state: paused !important;	
+	
+}
+
+
+#ad {
+	width: 300px;
+	height: 250px;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+#banner {
+	position: absolute;
+	display: block;
+	width: 300px;
+	height: 250px;
+	overflow: hidden;
+	cursor: pointer;
+	visibility: hidden;
+}
+
+.fallback {
+	z-index: 4;
+}
+
+#click-btn {
+	width: 300px;
+	height: 250px;
+	display: block;
+	z-index: 4;
+	cursor: pointer;
+}
+
+#frame_one, #frame_two, #frame_three, #frame_four {
+	width: 300px;
+	height: 250px;
+}
+
+/* ----------------------- Frame One -----------------------*/
+
+#frame_one {
+	background: url('../images/bg.jpg') no-repeat;
+}
+
+#frame_one .santas_grotto_container {
+	left: 39px;
+	top: 65px;
+	width: 239px;
+	height: 109px;
+	overflow: hidden;
+	webkit-animation: fade_out .1s 3s linear forwards;
+	animation: fade_out .1s 3s linear forwards;
+}
+
+#frame_one .santas_grotto_container .copy_bg {
+	top: 0;
+	left: 0;
+	webkit-animation: slide_left 2s linear forwards;
+	animation: slide_left 2s linear forwards;
+}
+
+#frame_one #stars li {
+	list-style: outside none none;
+	z-index: 2;
+	opacity: 0;
+	width: 29px;
+	height: 29px;
+}
+
+#frame_one #stars li:nth-child(1) {
+	left: 25px;
+	top: 37px;
+	webkit-animation: star 6s .1s linear forwards infinite;
+	animation: star 6s .1s linear forwards infinite;
+}
+
+#frame_one #stars li:nth-child(2) {
+	left: 138px;
+	top: 23px;
+	webkit-animation: star 6s 1.8s linear forwards infinite;
+	animation: star 6s 1.8s linear forwards infinite;
+}
+
+#frame_one #stars li:nth-child(3) {
+	left: 255px;
+	top: 177px;
+	webkit-animation: star 6s .5s linear forwards infinite;
+	animation: star 6s .5s linear forwards infinite;
+}
+
+#frame_one #stars li:nth-child(4) {
+	left: 228px;
+	top: 11px;
+	webkit-animation: star 6s 2.1s linear forwards infinite;
+	animation: star 6s 2.1s linear forwards infinite;
+}
+
+#frame_one #stars li:nth-child(5) {
+	left: 210px;
+	top: 124px;
+	webkit-animation: star 6s 2.9s linear forwards infinite;
+	animation: star 6s 2.9s linear forwards infinite;
+}
+
+#frame_one #stars li:nth-child(6) {
+	left: 16px;
+	top: 124px;
+	webkit-animation: star 6s 5.1s linear forwards infinite;
+	animation: star 6s 5.1s linear forwards infinite;
+}
+
+#frame_one #stars li:nth-child(7) {
+	left: 133px;
+	top: 198px;
+	webkit-animation: star 6s 6.1s linear forwards infinite;
+	animation: star 6s 6.1s linear forwards infinite;
+}
+
+#frame_one #stars li:nth-child(8) {
+	left: 198px;
+	top: 16px;
+	webkit-animation: star 6s 7.1s linear forwards infinite;
+	animation: star 6s 7.1s linear forwards infinite;
+}
+
+/* ----------------------- Frame Two -----------------------*/
+
+#frame_two {
+	opacity: 0;
+	webkit-animation: fade_in .5s 3.1s linear forwards, fade_out .5s 7s linear forwards;
+	animation: fade_in .5s 3.1s linear forwards, fade_out .5s 7s linear forwards;
+}
+
+#frame_two .ice_skating_container {
+	left: 31px;
+	top: 55px;
+	width: 239px;
+	height: 90px;
+	overflow: hidden;
+}
+
+#frame_two .ice_skating_container .copy_bg {
+	top: 0;
+	left: -500px;
+	webkit-animation: slide_left 2s 3.5s linear forwards;
+	animation: slide_left 2s 3.5s linear forwards;
+}
+
+#frame_two .in_association_copy {
+	opacity: 0;
+	webkit-animation: fade_in 1s 5s linear forwards;
+	animation: fade_in 1s 5s linear forwards;
+}
+
+#frame_two .snoopy_logo {
+	opacity: 0;
+	webkit-animation: fade_in 1s 5s linear forwards;
+	animation: fade_in 1s 5s linear forwards;
+}
+
+/* ----------------------- Frame Three -----------------------*/
+
+#frame_three {
+	opacity: 0;
+	webkit-animation: fade_in .5s 7.5s linear forwards, fade_out .3s 11s linear forwards;
+	animation: fade_in .5s 7.5s linear forwards, fade_out .3s 11s linear forwards;
+}
+
+#frame_three .christmas_is_here_container {
+	left: 59px;
+	top: 35px;
+	width: 198px;
+	height: 102px;
+	overflow: hidden;
+}
+
+#frame_three .christmas_is_here_container .copy_bg {
+	top: 0;
+	left: -500px;
+	webkit-animation: slide_left 2s 8s linear forwards;
+	animation: slide_left 2s 8s linear forwards;
+}
+
+#frame_three .make_it_magical_copy {
+	opacity: 0;
+	webkit-animation: fade_in .5s 10s linear forwards;
+	animation: fade_in .5s 10s linear forwards;
+}
+
+/* ----------------------- Frame Four -----------------------*/
+
+#frame_four .book_your_copy {
+	opacity: 0;
+	webkit-animation: fade_in 1.5s 11.2s forwards;
+	animation: fade_in 1.5s 11.2s forwards;
+}
+
+#frame_four .book_your_copy_glow {
+	opacity: 0;
+	webkit-animation: fade_in .2s 12.5s forwards, fade_out .2s 12.7s linear forwards;
+	animation: fade_in .2s 12.5s forwards, fade_out .2s 12.7s linear forwards;
+}
+
+#frame_four .dear_head {
+	opacity: 0;
+	webkit-animation: dear_head 1s 12.5s forwards;
+	animation: dear_head 1s 12.5s forwards;
+}
+
+
+/*-------------------------------------
+    Animation
+---------------------------------------*/
+
+/* Fade in animation */
+@-webkit-keyframes fade_in {
+	0%    { opacity: 0; }
+	100%  { opacity: 1; }
+}
+@keyframes fade_in {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+/* Fade out animation */
+@-webkit-keyframes fade_out {
+	0%    { opacity: 1; }
+	100%  { opacity: 0; }
+}
+@keyframes fade_out {
+	0%   { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+/* slide left */
+@-webkit-keyframes slide_left {
+	0%    { left: -500px; }
+	100%  { left: 0px; }
+}
+@keyframes slide_left {
+	0%    { left: -500px; }
+	100%  { left: 0px; }
+}
+
+/* Star Animation */
+@-webkit-keyframes star {
+	0%, 20%, 100%   { -webkit-transform:  rotate(0deg); opacity: 0; }
+	60%, 80%    	{ -webkit-transform:  rotate(180deg); opacity: 1; }
+}
+@keyframes star {
+	0%, 20%, 100%   { transform:  rotate(0deg); opacity: 0; }
+	60%, 80%    	{ transform:  rotate(180deg); opacity: 1; }
+}
+
+/* Dear Head */
+@-webkit-keyframes dear_head {
+	0%    { -webkit-transform: translate(10px, 5px) ; opacity: .8;}
+	100%  { -webkit-transform: translate(0px, 0px) ; opacity: 1;}
+}
+@keyframes dear_head {
+	0%    { transform: translate(10px, 5px) ; opacity: .8;}
+	100%  { transform: translate(0px, 0px) ; opacity: 1;}
+}

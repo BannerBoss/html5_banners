@@ -1,0 +1,134 @@
+<!doctype html> 
+<html> 
+<head> 
+<meta charset="utf-8"/> 
+<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+<title>MAZDA Standard Banner Test</title> 
+<script type="text/javascript" src="scripts/sizmek_fs_video_html5.js"></script>
+
+<link rel="stylesheet" href="style.css"/> 
+<script type="text/javascript">
+
+	function initEB(){
+		if (!EB.isInitialized()){
+			EB.addEventListener(EBG.EventName.EB_INITIALIZED, startAd);
+		}else{
+			startAd();
+		}
+
+		var videoState=document.getElementById("si_vid");
+
+		document.getElementById('play-video').addEventListener("click", function(event){
+    		document.getElementById("video").style.display="block";
+    		document.getElementById('play-video').style.display="none";
+    		document.getElementById("close-video").style.display="block";
+    		videoState.play()
+    		event.stopPropagation();
+		});
+
+
+		document.getElementById('close-video').addEventListener("click", function(event){
+    		document.getElementById("video").style.display="none";
+    		document.getElementById('play-video').style.display="block";
+    		document.getElementById("close-video").style.display="none";
+
+    		if(!videoState.paused)videoState.pause();
+    		
+    		event.stopPropagation();
+		});
+
+		document.getElementById('cta-drive').addEventListener("click", function(event){
+			if(!videoState.paused)videoState.pause();
+
+    		EB.clickthrough('testdrive');
+    		event.stopPropagation();
+		});
+
+		document.getElementById('cta-brochure').addEventListener("click", function(event){
+			if(!videoState.paused)videoState.pause();
+
+    		EB.clickthrough('brochure');
+    		event.stopPropagation();
+		});
+
+		document.getElementById('banner').addEventListener("click", function(event){
+			if(!videoState.paused)videoState.pause();
+
+    		EB.clickthrough();
+    		event.stopPropagation();
+		});
+
+	}
+	
+	function startAd(){
+		document.getElementById("banner").style.visibility = "visible";
+	}
+
+
+	
+</script>
+
+</head> 
+<body onload="initEB();"> 
+	<div id="ad">
+		<div id="banner">
+			<!--[if IE 9]>
+			    <div class="ie-fallback"></div>
+			<![endif]-->
+			<img src="images/defv.png" alt="DEFY CONVENTION" class="defv">
+			<img src="images/t-and-c.png" alt="T&C apply. Mazda Personal Contract Hire BS16 3JA" class="TandC">
+			<div class="car"></div>
+			<img src="images/9_10_logo.png" alt="" class="car_logo">
+			<img src="images/big-engine.png" alt="BIG ENGINE PERFORMANCE" class="big-engine">
+			<img src="images/small-engine.png" alt="SMALL ENGINE ECONOMY" class="small-engine">
+			<img src="images/cta-drive.png" alt="REQUEST A Test Drive" class="cta-drive" id="cta-drive">
+			<img src="images/cta-brochure.png" alt="REQUEST A Brochure" class="cta-brochure" id="cta-brochure">
+			<img src="images/mazda.png" alt="All-new MAZDA" class="new-mazda">
+			<img src="images/skyactive.png" alt="with skyactiv technology" class="skyactiv">
+			<img src="images/price.png" alt="from £199* per month" class="price">
+			<div class="cta-play-video"><img src="images/cta-play-video.png" alt="" id="play-video"></div>
+			<div class="cta-close-video" id="close-video"></div>
+
+			<div id="Sizmek_FS_Video_Block" onclick="javascript:event.stopPropagation()">
+				<div id="video"></div>
+				<div id="click"></div>
+			</div>
+
+		</div>
+	</div>
+
+	<script type="text/javascript">		
+		// the video module reference MUST be defined before the EBloader call.
+		EBModulesToLoad = ['Video']; 	
+	</script>
+
+	<script type="text/javascript" src="http://ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
+
+	<script type="text/javascript">
+	
+			// Establish Array to hold videos. Create unique array for each video - include source and type 
+			var videos = [ 
+							[ 'video/2012372_Mazda_Sky_Activ_Animation_re_edit_Engine_fcp002.mp4', 'video/mp4' ], 
+							[ 'video/2012372_Mazda_Sky_Activ_Animation_re_edit_Engine_fcp002.webm', 'video/webm' ],
+							[ 'video/2012372_Mazda_Sky_Activ_Animation_re_edit_Engine_fcp002.ogv', 'video/ogv' ]
+							
+						];
+						
+			// Establish Config Object to pass script options			
+			var si_fs_video_Config = {
+				options: {
+					div: 'video', 					// String - Div Video will be placed into
+					vid: videos, 					// Object - List of Videos established above 
+					controls: 'true', 				// Boolean - Show Controls - True or False
+					auto:'false',					// Boolean - Auto Play - True of False
+					poster: 'images/poster.jpg'		// String - Location of Poster
+				}
+			};
+	
+		var si_fs_video_block = new si_FS_Video_Block (si_fs_video_Config);
+
+	</script>
+	
+	<!-- End Sizmek HTML5 Fullscreen HD Video Block -->
+</body> 
+</html>

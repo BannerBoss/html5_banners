@@ -1,0 +1,952 @@
+
+@font-face {
+    font-family: 'garagebold';
+    src: url('fonts/garage-bold-webfont.eot');
+    src: url('fonts/garage-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/garage-bold-webfont.woff2') format('woff2'),
+         url('fonts/garage-bold-webfont.woff') format('woff'),
+         url('fonts/garage-bold-webfont.ttf') format('truetype'),
+         url('fonts/garage-bold-webfont.svg#garagebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'garageregular';
+    src: url('fonts/garagegothicregular-webfont.eot');
+    src: url('fonts/garagegothicregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/garagegothicregular-webfont.woff2') format('woff2'),
+         url('fonts/garagegothicregular-webfont.woff') format('woff'),
+         url('fonts/garagegothicregular-webfont.ttf') format('truetype'),
+         url('fonts/garagegothicregular-webfont.svg#garageregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*-------------------------------------
+    Reset
+---------------------------------------*/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, strong, sub, sup, b, u, i, ol, ul, li, form, label, article, aside, canvas, figure, figcaption, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; } body {line-height: 1; } ol, ul {list-style: none; } blockquote, q {quotes: none; } blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none; } table {border-collapse: collapse; border-spacing: 0; }
+#ad {
+    display: block;
+    /*border: 1px solid #d72129;*/
+    overflow: hidden;s
+    width: 300px;
+    height: 250px;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+video,img,.frame_two,#frame_two_rating {position: absolute;}
+#banner{  
+  width: 300px; 
+  height: 250px;
+  display: block;
+  cursor: pointer;  
+  overflow: hidden;
+  position:absolute;
+  visibility: hidden;
+ 
+   
+}
+/*.border-active{
+  opacity: 1;
+}*/
+
+#banner *{ position: absolute; }
+
+
+/*-------------------------------------
+    frame one
+---------------------------------------*/
+.frame_one { position: absolute; width: 100%; height: 100%; background: #000;}
+#frame_one_trailer{top: -43px; width: 106%; left: -8px; height: 106%; }
+.video-control { position: absolute; position: absolute; top: 10px; left: 10px; }
+.video-control li { display: inline-block; height: 28px; width: 28px; cursor: pointer; }
+.video-control li i { display: inline-block; height: 100%; width: 100%; background: url('images/video-control.png') no-repeat;}
+/*.video-control li.pause i { background-position: 0 0; display: none;}*/
+/*.video-control li.play i { background-position: -18px 0; display: none;}*/
+.video-control li.mute i { background-position: -52px 0;}
+.video-control li.unmute i { background-position: -82px 0;}
+.bottom-shadow {  width: 300px;  height: 100px;  background-color: black;  opacity: 1;  box-shadow: 0px 0px 25px 20px black;   top: 180px; z-index: 1; }
+.memphis-logo { width: 160px; height: 64px; bottom: 6px; left: 12px; background: url('images/memhis_logo.png') no-repeat; z-index: 2;}
+
+.book-now { width: 84px; height: 43px; bottom: 16px; right: 15px; border:1px solid #000; background: url('images/book-now.png') no-repeat left bottom; z-index: 2;}
+.book-now:hover { border:1px solid #f11639; background: url('images/book-now_hover.png') no-repeat left bottom; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; z-index: 3;}
+
+
+/*-------------------------------------
+    frame two
+---------------------------------------*/
+.frame_two { width: 298px; height: 248px; top:0; left:0; position: absolute; opacity: 0; display: none;  }
+.active { display: block; opacity: 1; background: url(images/border.png) no-repeat; width: 300px; height: 250px; display: block;  }
+.trasnsition-glow { width: 248;  height:100%;  background-color: #000; 
+
+   /* animation-name:white_glow;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-name:white_glow;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode:forwards;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;*/
+}
+
+@keyframes white_glow {
+  0%   { opacity: 0;  }
+  90%   { opacity: 1;  }
+  100%   { opacity: 1;  }
+}
+
+@-webkit-keyframes white_glow {
+  0%   { opacity: 0;  }
+  90%   { opacity: 1;  }
+  100%   { opacity: 1;  }
+}
+
+#banner .frame_two .bg {
+         top: 0; left: 0; width: 300px; height: 250px; opacity: 1; z-index: -1;     
+         animation: bg 5s ease ; -webkit-animation: bg 5s ease ; animation-delay: 0s; -webkit-animation-delay: 0s; 
+         animation-fill-mode:forwards;  -webkit-animation-fill-mode: forwards;
+}
+
+#banner .frame_two .white_memphis { top: 16; left: 40; width: 212px; height: 100px; opacity: 1; 
+        
+}
+.wh_memphis { width:212px; height: 100px;  top: 16px; left:40px; opacity: 1; transform: scale(0); 
+        animation: white_memphis 1s;  -webkit-animation: white_memphis 1s;  animation-delay: 0.1s; 
+        animation-fill-mode:forwards;  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes white_memphis{
+  
+  0%  { -webkit-transform: scale(0);  -webkit-animation-delay: 0.1s;  transform: scale(0); }
+  100%  { transform: scale(1);  } 
+}
+
+@-moz-keyframes white_memphis{
+  0%  {  transform: scale(0); }
+  100%  { transform: scale(1); }
+}
+
+@-o-keyframes white_memphis{
+  0%  {  transform: scale(0); }
+  100%  { transform: scale(1); } 
+}
+@keyframes white_memphis{
+  
+   0%  {  transform: scale(0); }
+   100%  { transform: scale(1);  } 
+}
+
+.get_ticket { top: 145px; left: 18px; 
+        top: 145px;
+        left: 31px; /* bottom: 109px; */
+        color: rgb(255, 255, 255);
+        font-family: "garagebold";
+        font-size: 32px;
+        line-height: 30px;
+        text-transform: uppercase;
+        width: 233px;
+        opacity: 1; 
+        animation: get_ticket 1s;  -webkit-animation: get_ticket 1s;   transform: scale(0);  
+        animation-fill-mode:forwards;  -webkit-animation-fill-mode: forwards; animation-delay: 0.1s; 
+}
+
+@-webkit-keyframes get_ticket{
+  0%  { -webkit-transform: scale(0);  -webkit-animation-delay: 0.1s;   }
+     100%  { transform: scale(1);} 
+}
+
+@-moz-keyframes get_ticket{
+  0%  {  transform: scale(0);}
+     100%  {  transform: scale(1);} 
+}
+
+@-o-keyframes get_ticket{
+  0%  {  transform: scale(0);}
+     100%  { transform: scale(1);} 
+}
+@keyframes get_ticket{
+  0%  {  transform: scale(0);}
+     100%  { transform: scale(1);} 
+}
+
+
+.int_awrard_line { width:212px; height: 18px;  top: 15px; left:40px; opacity: 0; 
+   
+        animation: awrard_story 1s;  -webkit-animation: awrard_story 1s;  animation-delay: 0.5s; -webkit-animation-delay: 0.5s; 
+        animation-fill-mode:forwards;  -webkit-animation-fill-mode: forwards;
+    }
+.story_line { width:212px; height: 16px;  top: 101px; left:40px; opacity: 0;
+ 
+        animation: awrard_story 1s;  -webkit-animation: awrard_story 1s;  animation-delay: 0.5s; -webkit-animation-delay: 0.5s; 
+        animation-fill-mode:forwards;  -webkit-animation-fill-mode: forwards;
+    }
+@-webkit-keyframes awrard_story{
+    0%  {opacity: 0;}       
+  100%  {opacity: 1;    } 
+}
+
+@-moz-keyframes awrard_story{
+    0%  {opacity: 0;}       
+  100%  {opacity: 1;     } 
+}
+
+@-o-keyframes awrard_story{
+    0%  {opacity: 0;}       
+  100%  {opacity: 1;     } 
+}
+
+@keyframes awrard_story{
+    0%  {opacity: 0;}       
+  100%  {opacity: 1;     } 
+}
+
+
+
+
+#banner .frame_two .cta {
+        top: 200px; left: 44px; width: 199px; height: 32px; opacity: 1;  background: url('images/cta.png') no-repeat;
+      
+        -webkit-transform: scale(0);  transform: scale(0); 
+       
+       /* animation: cta-anim  1s;  -webkit-animation: cta-anim  2.5s; 
+        animation-delay: 0.5s; 
+        animation-fill-mode:forwards;  
+*/
+
+        animation-name:cta-anim, cta_blink;
+        animation-duration: 0.5s, 1s;
+        animation-timing-function: linear;
+        animation-delay: 0.5s, 1.5s;
+        animation-iteration-count: 1, 2;
+        animation-fill-mode:forwards;
+
+        -webkit-animation-name:cta-anim, cta_blink;
+        -webkit-animation-duration: 0.5s, 1s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-delay: 0.5s, 1.5s;
+        -webkit-animation-iteration-count: 1, 2;
+        -webkit-animation-fill-mode:forwards;
+
+        -moz-animation-name:cta-anim, cta_blink;
+        -moz-animation-duration: 0.5s, 1s;
+        -moz-animation-timing-function: linear;
+        -moz-animation-delay: 0.5s, 1.5s;
+        -moz-animation-iteration-count: 1, 2;
+        -moz-animation-fill-mode:forwards;
+
+        -o-animation-name:cta-anim, cta_blink;
+        -o-animation-duration: 0.5s, 1s;
+        -o-animation-timing-function: linear;
+        -o-animation-delay: 0.5s, 1.5s;
+        -o-animation-iteration-count: 1, 2;
+        -o-animation-fill-mode:forwards;
+
+}
+
+#banner .frame_two .cta:hover{
+/* box-shadow: 0 0 15px #fff ; */
+ background: url('images/cta-hover.png') no-repeat;
+
+} 
+
+@-webkit-keyframes cta-anim{
+  0%  { -webkit-transform: scale(0);   }
+  100%  { -webkit-transform: scale(1);  } 
+}
+
+@-moz-keyframes cta-anim{
+  0%  {  transform: scale(0); }
+  100%  { transform: scale(1); }
+}
+
+@-o-keyframes cta-anim{
+  0%  {  transform: scale(0); }
+  100%  { transform: scale(1); } 
+}
+@keyframes cta-anim{
+  0%  {  transform: scale(0); }
+   100%  { transform: scale(1);  } 
+}
+
+@-webkit-keyframes cta_blink{
+    0% {  box-shadow: 0 0 0px #fff;}
+    5% {  box-shadow: 0 0 20px #fff;}
+   10% {   box-shadow: 0 0 0 #fff;}
+   15% {  box-shadow: 0 0 20px #fff;}
+   20% { box-shadow: 0 0 0 #fff;}
+   25% {  box-shadow: 0 0 20px #fff;}   
+   30% { box-shadow: 0 0 0 #fff; }
+   35% {  box-shadow: 0 0 20px #fff;}
+   40% {  box-shadow: 0 0 0 #fff;}
+  100% {  box-shadow: 0 0 0 #fff;}  
+}
+
+@-moz-keyframes cta_blink{
+    0% {  box-shadow: 0 0 0px #fff;}
+    5% {  box-shadow: 0 0 20px #fff;}
+   10% {   box-shadow: 0 0 0 #fff;}
+   15% {  box-shadow: 0 0 20px #fff;}
+   20% { box-shadow: 0 0 0 #fff;}
+   25% {  box-shadow: 0 0 20px #fff;}   
+   30% { box-shadow: 0 0 0 #fff; }
+   35% {  box-shadow: 0 0 20px #fff;}
+   40% {  box-shadow: 0 0 0 #fff;}
+  100% { box-shadow: 0 0 0 #fff;}  
+}
+
+@-o-keyframes cta_blink{
+    0% {  box-shadow: 0 0 0px #fff;}
+    5% {  box-shadow: 0 0 20px #fff;}
+   10% {   box-shadow: 0 0 0 #fff;}
+   15% {  box-shadow: 0 0 20px #fff;}
+   20% { box-shadow: 0 0 0 #fff;}
+   25% {  box-shadow: 0 0 20px #fff;}   
+   30% { box-shadow: 0 0 0 #fff; }
+   35% {  box-shadow: 0 0 20px #fff;}
+   40% {  box-shadow: 0 0 0 #fff;}
+  100% {  box-shadow: 0 0 0 #fff;}   
+}
+
+@keyframes cta_blink{
+    0% {  box-shadow: 0 0 0px #fff;}
+    5% {  box-shadow: 0 0 20px #fff;}
+   10% {   box-shadow: 0 0 0 #fff;}
+   15% {  box-shadow: 0 0 20px #fff;}
+   20% { box-shadow: 0 0 0 #fff;}
+   25% {  box-shadow: 0 0 20px #fff;}   
+   30% { box-shadow: 0 0 0 #fff; }
+   35% {  box-shadow: 0 0 20px #fff;}
+   40% {  box-shadow: 0 0 0 #fff;}
+  100% {box-shadow: 0 0 0 #fff;}  
+}
+
+
+
+
+#banner .frame_two .memphis_red_glow .memphis {
+    top: 34px;    left: 41px;    width: 211px;    height: 65px;  opacity: 0; 
+    animation-name:memphis;
+    animation-duration: 1s;
+    animation-delay:1s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-name:memphis;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode:forwards;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+
+@-webkit-keyframes memphis{
+      0%  { opacity: 0;}
+     75%  { opacity: 1;}    
+    100%  {opacity: 1;}
+}
+
+@-moz-keyframes memphis{
+      0%  { opacity: 0;}
+     75%  { opacity: 1;}    
+    100%  {opacity: 1;}
+}
+
+@-o-keyframes memphis{
+      0%  { opacity: 0;}
+     75%  { opacity: 1;}    
+    100%  {opacity: 1;}
+}
+
+@keyframes memphis{
+      0%  { opacity: 0;}
+     75%  { opacity: 1;}    
+    100%  {opacity: 1;}
+}
+.top_line {     width: 207px;     height: 3px;    top: 34px;    left: 43px;}
+.bottom_line{ width: 207px;     height: 3px;    top: 96px;    left: 43px; }
+
+animation: top_bottom_line 1s;  -webkit-animation: top_bottom_line 1s;  animation-delay: 0.1s; -webkit-animation-delay: 0.1s; 
+        animation-fill-mode:forwards;  -webkit-animation-fill-mode: forwards;
+    }
+@-webkit-keyframes top_bottom_line{
+    0%  {opacity: 0;  }       
+  100%  {opacity: 1;    } 
+}
+
+@-moz-keyframes top_bottom_line{
+    0%  {opacity: 0;}       
+  100%  {opacity: 1;     } 
+}
+
+@-o-keyframes top_bottom_line{
+    0%  {opacity: 0;}       
+  100%  {opacity: 1;     } 
+}
+
+@keyframes top_bottom_line{
+    0%  {opacity: 0;}       
+  100%  {opacity: 1;     } 
+}
+
+#banner .frame_two .memphis_red_glow {opacity: 1; width: 212px; height: 100px;
+
+        animation: memphis_red_glow 0.1s linear; -webkit-animation: memphis_red_glow 0.1s linear; animation-delay: 3s; -webkit-animation-delay: 3s; 
+        animation-fill-mode:forwards;  -webkit-animation-fill-mode: forwards; opacity: 0;
+
+          animation-name:memphis_red_glow, memphis_red_glow_again;
+         animation-duration: 0.1s, 0.2s;
+         animation-timing-function: linear;
+         animation-delay: 0.8s, 2.8s;
+         animation-iteration-count: 1;
+         animation-fill-mode:forwards;
+
+        -webkit-animation-name:memphis_red_glow, memphis_red_glow_again;
+        -webkit-animation-duration: 0.1s, 0.2s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-delay: 0.8s, 2.8s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-fill-mode:forwards; 
+
+        -moz-animation-name:memphis_red_glow, memphis_red_glow_again;
+        -moz-animation-duration: 0.1s, 0.2s;
+        -moz-animation-timing-function: linear;
+        -moz-animation-delay: 0.8s, 2.8s;
+        -moz-animation-iteration-count: 1;
+        -moz-animation-fill-mode:forwards; 
+
+        -o-animation-name:memphis_red_glow, memphis_red_glow_again;
+        -o-animation-duration: 0.1s, 0.2s;
+        -o-animation-timing-function: linear;
+        -o-animation-delay: 0.8s, 2.8s;
+        -o-animation-iteration-count: 1;
+        -o-animation-fill-mode:forwards; 
+}
+
+
+#banner .frame_two .memphis_red_glow .memphis_glow {
+             top: 48px; left: 23px; opacity: 1;     z-index: 1;
+
+         animation-name:memphis_glow, memphis_glow_again;
+         animation-duration: 0.5s, 0.8s;
+         animation-timing-function: linear;
+         animation-delay: 3.3s, 5.9s;
+         animation-iteration-count: 1;
+         animation-fill-mode:forwards;
+
+        -webkit-animation-name:memphis_glow, memphis_glow_again;
+        -webkit-animation-duration: 0.5s, 0.8s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-delay: 3.3s, 5.9s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-fill-mode:forwards; 
+
+        -moz-animation-name:memphis_glow, memphis_glow_again;
+        -moz-animation-duration: 0.5s, 0.8s;
+        -moz-animation-timing-function: linear;
+        -moz-animation-delay: 3.3s, 5.9s;
+        -moz-animation-iteration-count: 1;
+        -moz-animation-fill-mode:forwards;
+
+        -o-animation-name:memphis_glow, memphis_glow_again;
+        -o-animation-duration: 0.5s, 0.8s;
+        -o-animation-timing-function: linear;
+        -o-animation-delay: 3.3s, 5.9s;
+        -o-animation-iteration-count: 1;
+        -o-animation-fill-mode:forwards;
+         
+}
+
+#banner .frame_two .memphis_red_glow .memphis_glow_off {
+            top: 7px;    left: 41px;    opacity: 1;
+         
+         animation-name:memphis_glow;
+         animation-duration: 0.5s;
+         animation-timing-function: linear;
+         animation-delay: 2.9s;
+         animation-iteration-count: 1;
+         animation-fill-mode:forwards;
+
+        -webkit-animation-name:memphis_glow;
+        -webkit-animation-duration: 0.5s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-delay: 2.9s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-fill-mode:forwards; 
+
+        -moz-animation-name:memphis_glow;
+        -moz-animation-duration: 0.5s;
+        -moz-animation-timing-function: linear;
+        -moz-animation-delay: 2.9s;
+        -moz-animation-iteration-count: 1;
+        -moz-animation-fill-mode:forwards; 
+
+        -o-animation-name:memphis_glow;
+        -o-animation-duration: 0.5s;
+        -o-animation-timing-function: linear;
+        -o-animation-delay: 2.9s;
+        -o-animation-iteration-count: 1;
+        -o-animation-fill-mode:forwards; 
+         
+}
+
+#banner .frame_two .memphis_red_glow .memphis_glow .m_first {
+        top: -7px; left: 20px; width: 36px; height: 51px; opacity: 1;        
+
+       
+        animation-name:m_first, m_first_again;
+        animation-duration: 0.3s, 0.5s;
+        animation-timing-function: linear;
+        animation-delay: 1s, 2s;
+        animation-iteration-count: 1, 2;
+        animation-fill-mode:forwards;
+
+        -webkit-animation-name:m_first, m_first_again;
+        -webkit-animation-duration: 0.5s, 0.3s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-delay: 1s, 2s;
+        -webkit-animation-iteration-count: 1, 2;
+        -webkit-animation-fill-mode:forwards;
+
+        -moz-animation-name:m_first, m_first_again;
+        -moz-animation-duration: 0.5s, 0.3s;
+        -moz-animation-timing-function: linear;
+        -moz-animation-delay: 1s, 2s;
+        -moz-animation-iteration-count: 1, 2;
+        -moz-animation-fill-mode:forwards;
+
+        -o-animation-name:m_first, m_first_again;
+        -o-animation-duration: 0.5s, 0.3s;
+        -o-animation-timing-function: linear;
+        -o-animation-delay: 1s, 2s;
+        -o-animation-iteration-count: 1, 2;
+        -o-animation-fill-mode:forwards;
+}
+
+#banner .frame_two .memphis_red_glow .memphis_glow .e {
+        top: -7px; left: 58px; width: 26px; height: 50px; opacity: 1;
+        animation: s 0.5s linear; 
+        animation-delay:1.9s; 
+        animation-fill-mode:forwards;
+
+        -webkit-animation: s 0.5s linear;        
+        -webkit-animation-delay:1.9s;          
+        -webkit-animation-fill-mode: forwards;
+
+        -moz-animation: s 0.5s linear;        
+        -moz-animation-delay:1.9s;          
+        -moz-animation-fill-mode: forwards;
+
+        -o-animation: s 0.5s linear;        
+        -o-animation-delay:1.9s;          
+        -o-animation-fill-mode: forwards;
+}
+
+#banner .frame_two .memphis_red_glow .memphis_glow .m {
+        top: -7px; left: 85px; width: 37px; height: 51px; opacity: 1;
+}
+
+#banner .frame_two .memphis_red_glow .memphis_glow .p {
+        top: -7px; left: 123px; width: 30px; height: 51px; opacity: 1;
+}
+
+#banner .frame_two .memphis_red_glow .memphis_glow .h {
+        top: -7px; left: 152px; width: 30px; height: 51px; opacity: 1;       
+
+        animation-name:h, h_back;
+        animation-duration: 0.5s, 0.5s;
+        animation-timing-function: linear;
+        animation-delay: 1.3s, 1.7s;
+        animation-iteration-count: 1;
+        animation-fill-mode:forwards;
+
+        -webkit-animation-name:h, h_back;
+        -webkit-animation-duration: 0.5s, 0.5s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-delay: 1.3s, 1.7s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-fill-mode:forwards;
+
+        -moz-animation-name:h, h_back;
+        -moz-animation-duration: 0.5s, 0.5s;
+        -moz-animation-timing-function: linear;
+        -moz-animation-delay: 1.3s, 1.7s;
+        -moz-animation-iteration-count: 1;
+        -moz-animation-fill-mode:forwards;
+
+        -o-animation-name:h, h_back;
+        -o-animation-duration: 0.5s, 0.5s;
+        -o-animation-timing-function: linear;
+        -o-animation-delay: 1.3s, 1.7s;
+        -o-animation-iteration-count: 1;
+        -o-animation-fill-mode:forwards;
+}
+
+#banner .frame_two .memphis_red_glow .memphis_glow .i {
+        top: -7px; left: 185px; width: 14px; height: 51px; opacity: 1;
+}
+
+#banner .frame_two .memphis_red_glow .memphis_glow .s {
+        top: -7px; left: 199px; width: 30px; height: 51px; opacity: 1;
+        animation: s 0.5s linear; 
+        animation-delay:1.5s;
+        animation-fill-mode:forwards;  
+
+        -webkit-animation: s 0.5s linear;  
+        -webkit-animation-delay:1.5s; 
+        -webkit-animation-fill-mode: forwards;
+
+        -moz-animation: s 0.5s linear;  
+        -moz-animation-delay:1.5s; 
+        -moz-animation-fill-mode: forwards;
+
+        -o-animation: s 0.5s linear;  
+        -o-animation-delay:1.5s; 
+        -o-animation-fill-mode: forwards;
+}
+
+#banner .frame_two .memphis_red_glow .memphis_glow_off .m_first {
+        top: 34px; left: 1px; width: 37px; height: 51px; opacity: 1; z-index:-1;
+        
+    }
+
+#banner .frame_two .memphis_red_glow .memphis_glow_off .e {
+       /* top: 71px; left: 71px; width: 31px; height: 61px;*/ opacity: 1; z-index: -1;
+       top: 34px;    left: 39px;    width: 26px;    height: 50px;
+}
+
+#banner .frame_two .memphis_red_glow .memphis_glow_off .m {
+        top: 34px;  left: 66px; width: 37px; height: 51px; opacity: 1; z-index: -1;
+}
+
+#banner .frame_two .memphis_red_glow .memphis_glow_off .p {
+       top: 34px;  left: 105px; width: 30px; height: 51px; opacity: 1; z-index: -1;
+}
+
+#banner .frame_two .memphis_red_glow .memphis_glow_off .h {
+       top: 34px;  left: 134px; width: 30px; height: 51px; opacity: 1; z-index: -1;
+}
+
+#banner .frame_two .memphis_red_glow .memphis_glow_off .i {
+        top: 34px;  left: 166px; width: 14px; height: 51px;  opacity: 1; z-index: -1;
+}
+
+#banner .frame_two .memphis_red_glow .memphis_glow_off .s {
+       top: 34px;  left: 181px; width: 30px; height: 51px; opacity: 1; z-index: -1;
+}
+
+
+
+
+/* Keyframe animation start */
+
+
+
+@-webkit-keyframes bg {
+    0%  {-webkit-transform: scale(1.1)}
+  100%  {-webkit-transform: scale(1)} 
+}
+
+@-moz-keyframes bg {
+    0%  {-webkit-transform: scale(1.1)}
+  100%  {-webkit-transform: scale(1)} 
+}
+
+@-o-keyframes bg {
+    0%  {-webkit-transform: scale(1.1)}
+  100%  {-webkit-transform: scale(1)} 
+}
+
+@keyframes bg {
+    0%  {transform: scale(1.1)}
+  100%  {transform: scale(1)} 
+}
+
+
+@-webkit-keyframes memphis_red_glow{
+    0%  {opacity: 0;}       
+  100%  {opacity: 1;} 
+}
+
+@-moz-keyframes memphis_red_glow{
+    0%  {opacity: 0;}       
+  100%  {opacity: 1;} 
+}
+
+@-o-keyframes memphis_red_glow{
+    0%  {opacity: 0;}       
+  100%  {opacity: 1;} 
+}
+
+@keyframes memphis_red_glow{
+    0%  {opacity: 0;}       
+  100%  {opacity: 1;} 
+}
+
+
+
+
+
+@-webkit-keyframes memphis_glow{
+    0%  {opacity: 1;}
+    60%  {opacity: 1;}       
+  100%  {opacity: 1;} 
+}
+
+@-moz-keyframes memphis_glow{
+    0%  {opacity: 1;}
+    60%  {opacity: 1;}       
+  100%  {opacity: 1;} 
+}
+
+@-o-keyframes memphis_glow{
+    0%  {opacity: 1;}
+    60%  {opacity: 1;}       
+  100%  {opacity: 1;} 
+}
+
+@keyframes memphis_glow{
+    0%  {opacity: 1;}
+    60%  {opacity: 1;}       
+  100%  {opacity: 1;} 
+}
+
+
+/*
+@-webkit-keyframes memphis_glow_again{
+     0%  {opacity: 0;  }           
+  100%  {opacity: 1; }
+}
+
+@-moz-keyframes memphis_glow_again{
+     0%  {opacity: 0; }           
+  100%  {opacity: 1; }
+}
+
+@-o-keyframes memphis_glow_again{
+     0%  {opacity: 0;  }           
+  100%  {opacity: 1; }
+}
+
+@keyframes memphis_glow_again{
+    0%  {opacity: 0; }           
+  100%  {opacity: 1; } 
+}
+*/
+
+
+@-webkit-keyframes memphis_glow_off{
+    0%  {opacity: 1;}
+    60%  {opacity: 0;}       
+  100%  {opacity: 0;} 
+}
+
+@-moz-keyframes memphis_glow_off{
+    0%  {opacity: 1;}
+    60%  {opacity: 0;}       
+  100%  {opacity: 0;} 
+}
+
+@-o-keyframes memphis_glow_off{
+    0%  {opacity: 1;}
+    60%  {opacity: 0;}       
+  100%  {opacity: 0;} 
+}
+
+@keyframes memphis_glow_off{
+    0%  {opacity: 1;} 
+    60%  {opacity: 0;}      
+  100%  {opacity: 0; } 
+}
+
+
+
+@-webkit-keyframes m_first{
+    0%  {opacity: 1; }
+    5%  {opacity: 0; }  
+  100%  {opacity: 1; } 
+}
+
+@-moz-keyframes m_first{
+    0%  {opacity: 1; }
+    5%  {opacity: 0; }  
+  100%  {opacity: 1; } 
+}
+
+@-o-keyframes m_first{
+    0%  {opacity: 1; }
+    5%  {opacity: 0; }  
+  100%  {opacity: 1; } 
+}
+
+@keyframes m_first{
+    0%  {opacity: 1; }
+    5%  {opacity: 0; }  
+  100%  {opacity: 1; } 
+}
+
+
+@-webkit-keyframes m_first_again{
+    0%  {opacity: 0; }
+    5%  {opacity: 1; }
+   10%  {opacity: 0; }
+   15%  {opacity: 1; }   
+  100%  {opacity: 1; } 
+}
+
+@-moz-keyframes m_first_again{
+    0%  {opacity: 0; }
+    5%  {opacity: 1; }
+   10%  {opacity: 0; }
+   15%  {opacity: 1; }   
+  100%  {opacity: 1; } 
+}
+
+@-o-keyframes m_first_again{
+    0%  {opacity: 0; }
+    5%  {opacity: 1; }
+   10%  {opacity: 0; }
+   15%  {opacity: 1; }   
+  100%  {opacity: 1; }  
+}
+
+@keyframes m_first_again{
+    0%  {opacity: 0; }
+    5%  {opacity: 1; }
+   10%  {opacity: 0; }
+   15%  {opacity: 1; }   
+  100%  {opacity: 1; }  
+}
+
+
+@-webkit-keyframes h{
+    0%  {opacity: 1;}
+    5%  {opacity: 0;}
+  100%  {opacity: 1;} 
+}
+
+@-moz-keyframes h{
+    0%  {opacity: 1;}
+    5%  {opacity: 0;}
+  100%  {opacity: 1;} 
+}
+
+@-o-keyframes h{
+    0%  {opacity: 1;}
+    5%  {opacity: 0;}
+  100%  {opacity: 1;} 
+}
+
+@keyframes h{
+    0%  {opacity: 1;}
+    5%  {opacity: 0;}
+  100%  {opacity: 1;} 
+}
+
+
+@-webkit-keyframes h_back{
+    0%  {opacity: 1;}
+    5%  {opacity: 0;}
+  100%  {opacity: 1;} 
+}
+
+@-moz-keyframes h_back{
+    0%  {opacity: 1;}
+    5%  {opacity: 0;}
+  100%  {opacity: 1;} 
+}
+
+@-o-keyframes h_back{
+    0%  {opacity: 1;}
+    5%  {opacity: 0;}
+  100%  {opacity: 1;} 
+}
+
+@keyframes h_back{
+    0%  {opacity: 1;}
+    5%  {opacity: 0;}
+  100%  {opacity: 1;} 
+}
+
+
+@-webkit-keyframes s{
+    0%  {opacity: 1;}
+    5%  {opacity: 0;}  
+  100%  {opacity: 1;} 
+}
+
+@-moz-keyframes s{
+    0%  {opacity: 1;}
+    5%  {opacity: 0;}  
+  100%  {opacity: 1;} 
+}
+
+@-o-keyframes s{
+    0%  {opacity: 1;}
+    5%  {opacity: 0;}  
+  100%  {opacity: 1;} 
+}
+
+@keyframes s{
+    0%  {opacity: 1;}
+    5%  {opacity: 0;}  
+  100%  {opacity: 1;} 
+}
+
+
+@-webkit-keyframes e{
+    0%  {opacity: 1;}
+    5%  {opacity: 0;}  
+  100%  {opacity: 1;} 
+}
+
+@-moz-keyframes e{
+    0%  {opacity: 1;}
+    5%  {opacity: 0;}  
+  100%  {opacity: 1;} 
+}
+
+@-o-keyframes e{
+    0%  {opacity: 1;}
+    5%  {opacity: 0;}  
+  100%  {opacity: 1;} 
+}
+
+@keyframes e{
+    0%  {opacity: 1;}
+    5%  {opacity: 0;}  
+  100%  {opacity: 1;} 
+}
+
+
+@-webkit-keyframes cta{
+    0%  {opacity: 0;}       
+  100%  {opacity: 1;} 
+}
+
+@-moz-keyframes cta{
+    0%  {opacity: 0;}       
+  100%  {opacity: 1;} 
+}
+
+@-o-keyframes cta{
+    0%  {opacity: 0;}       
+  100%  {opacity: 1;} 
+}
+
+@keyframes cta{
+    0%  {opacity: 0;}       
+  100%  {opacity: 1;} 
+}
+

@@ -1,0 +1,278 @@
+/*-------------------------------------
+    Reset
+---------------------------------------*/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, strong, sub, sup, b, u, i, ol, ul, li, form, label, article, aside, canvas, figure, figcaption, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; }
+body {line-height: 1; }
+ol, ul {list-style: none; }
+blockquote, q {quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none; }
+table {border-collapse: collapse; border-spacing: 0; }
+
+@font-face {
+  font-family: 'DINPro-Black';
+  src: url('../fonts/DINPro-Black.eot?#iefix') format('embedded-opentype'),  
+       url('../fonts/DINPro-Black.otf')  format('opentype'),
+       url('../fonts/DINPro-Black.woff') format('woff'), 
+       url('../fonts/DINPro-Black.ttf')  format('truetype'), 
+       url('../fonts/DINPro-Black.svg#DINPro-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*-------------------------------------
+    Animation
+---------------------------------------*/
+/* Fade in animation */
+@-webkit-keyframes fade_in {
+  0%    { opacity: 0; }
+  100%  { opacity: 1; }
+}
+
+@keyframes fade_in {
+   0%   { opacity: 0; }
+   100% { opacity: 1; }
+}
+
+
+/* Fade out animation */
+@-webkit-keyframes fade_out {
+  0%    { opacity: 1; }
+  100%  { opacity: 0; }
+}
+
+@keyframes fade_out {
+   0%   { opacity: 1; }
+   100% { opacity: 0; }
+}
+
+/* slide to right bottom animation */
+@-webkit-keyframes slide_right_bottom {
+  0%      { left: -50px; }
+  100%    { left: 180px; top: 300px; -webkit-transform: rotate(90deg);  }
+}
+
+@keyframes slide_right_bottom {
+   0%    { left: -50px; }
+   100%  { left: 180px; top: 300px; transform: rotate(90deg); }
+}
+
+
+/* unlimited play text slide to top animation */
+@-webkit-keyframes unlimited_play_slide_top {
+  0%    { bottom: -212px; }
+  100%  { bottom: 0; }
+}
+
+@keyframes unlimited_play_slide_top {
+   0%    { bottom: -212px; }
+  100%   { bottom: 0; }
+}
+
+
+/* slide from top animation */
+@-webkit-keyframes best_price_slide_bottom {
+  0%    { top: -60px; }
+  100%  { top: 40px; right: 80px; }
+}
+
+@keyframes best_price_slide_bottom {
+   0%    { top: -60px; }
+  100%   { top: 40px; right: 80px; }
+}
+
+
+
+/* unlimited play text falling animation*/
+@-webkit-keyframes motionblur_with_falling {
+  0%    { text-shadow: 0 0 5px rgba(0,0,0,.5); }
+  100%  { text-shadow: 0 0 5px rgba(0,0,0,1); top: 265px; }
+}
+
+@keyframes motionblur_with_falling {
+  0%    { text-shadow: 0 0 5px rgba(0,0,0,.5); }
+  100%  { text-shadow: 0 0 5px rgba(0,0,0,1); top: 265px; }
+}
+
+
+/* falling cat animation*/
+@-webkit-keyframes falling_cat {
+  0%    { right: -370px; top: -270px; -webkit-transform: rotate(70deg);  }
+  30%   { right: -200px; top: -150px; -webkit-transform: rotate(50deg);  }
+  99%   { right: 0px; top: -25px; opacity: 1;  -webkit-transform: rotate(0deg); }
+  100%  { right: 0px; top: -25px; opacity: 0;  -webkit-transform: rotate(0deg); }
+}
+
+@keyframes falling_cat {
+  0%    { right: -370px; top: -270px; transform: rotate(70deg);  }
+  30%   { right: -200px; top: -150px; transform: rotate(50deg);  }
+  99%   { right: 0px; top: -25px; opacity: 1;  transform: rotate(0deg); }
+  100%  { right: 0px; top: -25px; opacity: 0;  transform: rotate(0deg); }
+}
+
+
+/* slide to bottom animation for eagle and best price text */
+@-webkit-keyframes slide_bottom {
+  0%    { top:0; left: 0; }
+  100%  { top: 222px; left: -50px; }
+}
+@keyframes slide_bottom {
+  0%    { top:0; left: 0; }
+  100%  { top: 222px; left: -50px; }
+}
+
+
+/* Blusting effect */
+@-webkit-keyframes blust {
+  0%    { -webkit-transform: scale(0); transform: scale(0); }
+  95%   { opacity: 1; }
+  100%  { -webkit-transform: scale(9); transform: scale(9); opacity: 0; bottom: 0; }
+}
+@keyframes blust {
+  0%    { -webkit-transform: scale(0); transform: scale(0); }
+  95%   { opacity: 1; }
+  100%  { -webkit-transform: scale(9); transform: scale(9); opacity: 0; bottom: 0; }
+}
+
+
+/* Zoominout effect */
+@-webkit-keyframes zoominout {
+  0%    { -webkit-transform: scale(0); transform: scale(0); }
+  30%   { -webkit-transform: scale(1); transform: scale(1); }
+  60%   { -webkit-transform: scale(1); transform: scale(1); }
+  90%   { -webkit-transform: scale(0); transform: scale(0); }
+  100%  { -webkit-transform: scale(0); transform: scale(0); }
+}
+
+@keyframes zoominout {
+  0%    { -webkit-transform: scale(0); transform: scale(0); }
+  30%   { -webkit-transform: scale(1); transform: scale(1); }
+  60%   { -webkit-transform: scale(1); transform: scale(1); }
+  90%   { -webkit-transform: scale(0); transform: scale(0); }
+  100%  { -webkit-transform: scale(0); transform: scale(0); }
+}
+
+
+/* Zoomin effect */
+@-webkit-keyframes zoomin {
+  0%    { -webkit-transform: scale(0); transform: scale(0); }
+  100%  { -webkit-transform: scale(1); transform: scale(1); }
+}
+
+@keyframes zoomin {
+  0%    { -webkit-transform: scale(0); transform: scale(0); }
+  100%  { -webkit-transform: scale(1); transform: scale(1); }
+}
+
+
+/* fadeInRight effect for poster elements */
+@-webkit-keyframes fadeInRight {
+  0%    { opacity: 0; -webkit-transform: translateX(100px); transform: translateX(100px); }
+  100%  { opacity: 1; -webkit-transform: translateX(0px); transform: translateX(0px); }
+}
+
+@keyframes fadeInRight {
+  0%    { opacity: 0; -webkit-transform: translateX(100px); transform: translateX(100px); }
+  100%  { opacity: 1; -webkit-transform: translateX(0px); transform: translateX(0px); }
+}
+
+
+/* slide from bottom to top effect for last frame elements */
+@-webkit-keyframes slidetotop {
+  0%    { opacity: 0; -webkit-transform: translateY(100px); transform: translateY(100px); }
+  100%  { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+}
+
+@keyframes slidetotop {
+  0%    { opacity: 0; -webkit-transform: translateY(100px); transform: translateY(100px); }
+  100%  { opacity: 1; -webkit-transform: translateY(0px); transform: translateY(0px); }
+}
+
+
+/* slide from left effect for last frame elements */
+@-webkit-keyframes slidefromleft {
+  0%    { opacity: 0; -webkit-transform: translateX(-100px); transform: translateX(-100px); }
+  100%  { opacity: 1; -webkit-transform: translateX(0px); transform: translateX(0px); }
+}
+
+@keyframes slidefromleft {
+  0%    { opacity: 0; -webkit-transform: translateX(-100px); transform: translateX(-100px); }
+  100%  { opacity: 1; -webkit-transform: translateX(0px); transform: translateX(0px); }
+}
+
+
+/* Radius remove animation */
+@-webkit-keyframes radius_removing {
+  0%    { border-radius: 50%; }
+  100%  { border-radius: 0; }
+}
+
+@keyframes radius_removing {
+  0%    { border-radius: 50%; }
+  100%  { border-radius: 0; }
+}
+
+
+/*-------------------------------------
+    Layout
+---------------------------------------*/
+body        { font-family: "DINPro-Black", arial, "Helvetica Neue", Helvetica}
+a 		{ text-decoration: none; color: #FFF; }
+#ad         { display:block; overflow:hidden;width:300px;height:250px;-moz-user-select: -moz-none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none; }
+#banner     { position: absolute; display:block; width:300px; height:250px; overflow:hidden; cursor:pointer; visibility: hidden; background: url("../images/background.jpg") no-repeat; }
+#banner *   { position: absolute; }
+#banner br  { position: static; }
+.fallback   { z-index: 10; }
+.clicktag   { width: 300px; height: 250px; display: block; z-index: 20; }
+
+#frame_one, #frame_two, #frame_three, #frame_four, #frame_five, #frame_six, #frame_seven { width: 300px; height: 250px; }
+
+#frame_one                 { -webkit-animation: fade_out 0.5s ease 1.5s both; animation: fade_out 0.5s ease 1.5s both; }
+#frame_one .white_circle   { top: 65px; left: 90px; }
+#frame_one .blue_glow      { top: 28px; left: 53px; z-index: 1; -webkit-animation: fade_in 0.5s ease .5s both; animation: fade_in 0.5s ease .5s both; }
+#frame_one .white_glow     { top: 61px; left: 86px; z-index: 2; -webkit-animation: fade_in 0.5s ease 1s both; animation: fade_in 0.5s ease 1s both; }
+
+#frame_two .eagle         { top: 0; left: -120px; -webkit-animation: slide_right_bottom 2s ease 2.2s forwards; animation: slide_right_bottom 2s ease 2.2s forwards; }
+
+#frame_three .eagle_with_text                     { width: 100%; height: 100%; bottom: -212px; -webkit-animation: unlimited_play_slide_top 1.5s ease 4.4s both; animation: unlimited_play_slide_top 1.5s ease 4.4s both; }
+#frame_three .eagle_with_text .eagle_from_bottom  { bottom: 98px; left: 80px; z-index: 3; }
+#frame_three .eagle_with_text .unlimited_play     { top: 265px; left: 30px; color: #FFF; font-size: 23px; text-shadow:0 2px 4px #333; letter-spacing: -1px; line-height: 24px; text-align: center; text-transform: uppercase; top: 143px; -webkit-transform: rotate(-11deg); transform: rotate(-11deg); }
+#frame_three .alter_eagle_with_text .best_price   { color: #FFF; text-shadow: 0 2px 4px #333; font-size: 23px; text-align: center; text-transform: uppercase; -webkit-transform: rotate(7deg); transform: rotate(7deg); top: -60px; right: 50px; -webkit-animation: best_price_slide_bottom 1s ease 7s both; animation: best_price_slide_bottom 1s ease 7s both; }
+#frame_three .eagle_with_text .eagle_from_bottom  { -webkit-animation: fade_out .5s linear 7.6s both; animation: fade_out .5s linear 7.6s both; }
+#frame_three .alter_eagle_with_text .alter_eagle  { left: 70px; top: 70px; opacity: 0; -webkit-animation: fade_in .5s linear 7.6s forwards; animation: fade_in .5s linear 7.6s forwards; }
+#frame_three .eagle_with_text .unlimited_play     { -webkit-animation: motionblur_with_falling 1s ease-out 7.6s forwards; animation: motionblur_with_falling 1s ease-out 7.6s forwards; }
+#frame_three .alter_eagle_with_text               { width:100%; height:100%; -webkit-animation: slide_bottom 2s ease 8.7s forwards; animation: slide_bottom 2s ease 8.7s forwards; }
+
+#frame_four               { z-index: 4; }
+#frame_four .falling_cat  { right: -370px; top: -270px; -webkit-transform: rotate(70deg); transform: rotate(70deg);  -webkit-animation: falling_cat 2s linear 8s forwards; animation: falling_cat 2s linear 8s forwards; }
+#frame_four .blust        { width: 100%; height: 100%; bottom: -250px; -webkit-transform: scale(0); transform: scale(0); -webkit-animation: blust 1.2s ease 9s both; animation: blust 1.2s ease 9s both; }
+
+#frame_five               { z-index: 5; }
+#frame_five .blueray      { width: 100%; height: 100%; -webkit-animation: zoomin 0.6s linear 10s forwards, radius_removing 0.4s 10.6s forwards; animation: zoomin 0.6s linear 10s forwards, radius_removing 0.4s 10.6s forwards; -webkit-transform: scale(0); transform: scale(0); border-radius: 50%; }
+#frame_five .pricetag     { width: 100%; height: 100%; -webkit-animation: zoominout 2s 11s forwards; animation: zoominout 2s 11s forwards; -webkit-transform: scale(0); transform: scale(0); }
+#frame_five .unbilievable { width: 100%; height: 100%; -webkit-animation: zoomin 1s 13s forwards; animation: zoomin 1s 13s forwards; -webkit-transform: scale(0); transform: scale(0); }
+
+#frame_six                          { z-index: 6; }
+#frame_six #poster                  { width: 340px; height: 250px; }
+#frame_six #poster li               { position: static; display: block; float: left; background: green; height: 81px; width: 66px; border: 1px solid green; -webkit-animation: fadeInRight .1s 14s both; animation: fadeInRight .1s 14s both; }
+#frame_six #poster li:nth-child(2)  { -webkit-animation-delay: 14.1s; animation-delay: 14.1s; }
+#frame_six #poster li:nth-child(3)  { -webkit-animation-delay: 14.2s; animation-delay: 14.2s; }
+#frame_six #poster li:nth-child(4)  { -webkit-animation-delay: 14.3s; animation-delay: 14.3s; }
+#frame_six #poster li:nth-child(5)  { -webkit-animation-delay: 14.4s; animation-delay: 14.4s; }
+#frame_six #poster li:nth-child(6)  { -webkit-animation-delay: 14.5s; animation-delay: 14.5s; }
+#frame_six #poster li:nth-child(7)  { -webkit-animation-delay: 14.6s; animation-delay: 14.6s }
+#frame_six #poster li:nth-child(8)  { -webkit-animation-delay: 14.7s; animation-delay: 14.7s; }
+#frame_six #poster li:nth-child(9)  { -webkit-animation-delay: 14.8s; animation-delay: 14.8s; }
+#frame_six #poster li:nth-child(10) { -webkit-animation-delay: 14.9s; animation-delay: 14.9s; }
+#frame_six #poster li:nth-child(11) { -webkit-animation-delay: 15s; animation-delay: 15s; }
+#frame_six #poster li:nth-child(12) { -webkit-animation-delay: 15.1s; animation-delay: 15.1s; }
+#frame_six #poster li:nth-child(13) { -webkit-animation-delay: 15.2s; animation-delay: 15.2s; }
+#frame_six #poster li:nth-child(14) { -webkit-animation-delay: 15.3s; animation-delay: 15.3s; }
+#frame_six #poster li:nth-child(15) { -webkit-animation-delay: 15.4s; animation-delay: 15.4s; }
+
+#frame_seven  { z-index: 7; }
+#frame_seven .deepbluebg  { opacity: 0; -webkit-animation: fade_in 0.8s linear 15.5s forwards; animation: fade_in 0.8s linear 15.5s forwards; }
+#frame_seven .fireflame   { opacity: 0; bottom: 0; left: 0; z-index: 8; -webkit-animation: slidetotop 0.5s ease 16.6s forwards; animation: slidetotop 0.5s ease 16.6s forwards; }
+#frame_seven .xboxone     { opacity: 0; bottom: 0; left: 0; z-index: 9; -webkit-animation: slidetotop 0.5s ease 16.3s forwards; animation: slidetotop 0.5s ease 16.3s forwards; }
+#frame_seven .playthebest { opacity:0; bottom: 94px; left: 74px; z-index: 9; -webkit-animation: fadeInRight 0.5s ease 17.1s forwards; animation: fadeInRight 0.5s ease 17.1s forwards; }
+#frame_seven .cta         { opacity:0; bottom: 71px; left: 109px; z-index: 9; -webkit-animation: slidefromleft 0.5s ease 17.1s forwards; animation: slidefromleft 0.5s ease 17.1s forwards; }

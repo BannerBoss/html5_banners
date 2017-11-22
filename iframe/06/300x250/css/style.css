@@ -1,0 +1,265 @@
+/*-------------------------------------
+Reset
+---------------------------------------*/
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,a,img,strong,sub,sup,b,u,i,ol,ul,li,form,label,article,aside,canvas,figure,figcaption,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+  border:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+  margin:0;
+  padding:0;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display:block;
+}
+
+body {
+  line-height:1;
+}
+
+ol,ul {
+  list-style:none;
+}
+
+blockquote,q {
+  quotes:none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content:none;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+
+
+/*-------------------------------------
+Layout
+---------------------------------------*/
+a {
+  text-decoration:none;
+  color:#FFF;
+}
+
+#ad {
+  display:block;
+  overflow:hidden;
+  width:300px;
+  height:250px;
+  -moz-user-select:0;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+
+#banner {
+  position:absolute;
+  display:block;
+  width:300px;
+  height:250px;
+  overflow:hidden;
+  cursor:pointer;
+  visibility:hidden;
+  background:url(../images/bg.jpg) no-repeat;
+  border:1px solid #000;
+  box-sizing:border-box;
+}
+
+#banner * {
+  position:absolute;
+}
+
+#banner br {
+  position:static;
+}
+
+.fallback {
+  z-index:10;
+}
+
+.clicktag {
+  width:300px;
+  height:250px;
+  display:block;
+  z-index:20;
+}
+
+#frame_one,#frame_two,#frame_three{
+  width:300px;
+  height:250px;
+}
+
+
+/*-------------------------------------
+    Frame 1
+---------------------------------------*/
+
+#frame_one .logo{
+  left: 77px;
+  top: 11px;
+  z-index: 1;
+  opacity: 0;
+  -webkit-animation: fade_in 1.5s ease 0.4s forwards;
+          animation: fade_in 1.5s ease 0.4s forwards;
+}
+
+#frame_one .messi{
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  -webkit-animation: messi 6s 1.7s forwards;
+          animation: messi 6s 1.7s forwards;
+}
+
+#frame_one .glow{
+  opacity: 0;
+  -webkit-animation: glow 6s ease 2.3s forwards;
+          animation: glow 6s ease 2.3s forwards;
+}
+
+/*-------------------------------------
+    Frame 2
+---------------------------------------*/
+#frame_two .bottom-sec{
+  width: 100%;
+  bottom: 0;
+  background: #fff;
+  z-index: 2;
+  opacity: 0;
+  -webkit-animation: bottom-sec .4s ease 3s forwards;
+          animation: bottom-sec .4s ease 3s forwards;
+}
+
+#frame_two .origin{
+  left: 16px;
+  top: 7px;
+  opacity: 0;
+  -webkit-animation: fade_in .4s ease 3.4s forwards;
+          animation: fade_in .4s ease 3.4s forwards;
+}
+
+#frame_two .cta{
+  right: 16px;
+  top: 6px;
+  opacity: 0;
+  -webkit-animation: fade_in .4s ease 3.4s forwards;
+          animation: fade_in .4s ease 3.4s forwards;
+}
+/*-------------------------------------
+    Frame 3
+---------------------------------------*/
+#frame_three .copy{
+  opacity: 0;
+  top: 57px;
+  left: -1px;
+  -webkit-animation: fade_in 1s ease 5.8s forwards;
+          animation: fade_in 1s ease 5.8s forwards;
+} 
+
+#frame_three .guarantee{ 
+  right: 36px;
+  z-index: 3;
+  opacity: 0;
+  top:113px;
+  -webkit-animation: fade_in .5s ease 7s forwards;
+          animation: fade_in .5s ease 7s forwards;
+}
+
+
+
+
+/*-------------------------------------
+    Animation
+---------------------------------------*/
+/* Fade animation */
+@-webkit-keyframes fade_in {
+  0%    { opacity: 0; }
+  100%  { opacity: 1; }
+}
+
+@keyframes fade_in {
+   0%   { opacity: 0; }
+   100% { opacity: 1; }
+}
+
+@-webkit-keyframes fade_out {
+  0%    { opacity: 1; }
+  100%  { opacity: 0; }
+}
+
+@keyframes fade_out {
+   0%   { opacity: 1; }
+   100% { opacity: 0; }
+}
+
+
+/* slide animation */
+
+
+@-webkit-keyframes messi {
+   0%   { -webkit-transform:translateX(-40px); transform:translateX(-40px); opacity: 1;}
+   6%    { -webkit-transform:translateX(160px); transform:translateX(160px); opacity: 1;}
+   56%   { -webkit-transform:translateX(160px); transform:translateX(160px); opacity: 1;}
+   62%  { -webkit-transform:translateX(300px); transform:translateX(300px); opacity: 1;}
+   100% { -webkit-transform:translateX(300px); transform:translateX(300px); opacity: 1;}
+}
+
+@keyframes messi {
+   0%   { transform:translateX(-40px); opacity: 1;}
+   6%   { transform:translateX(160px); opacity: 1;}
+   56%  { transform:translateX(160px); opacity: 1;}
+   62%  { transform:translateX(300px); opacity: 1;}
+   100% { transform:translateX(300px); opacity: 1;}
+}
+
+@-webkit-keyframes glow {
+   0%   { opacity: 0;}
+   6%   { opacity: 1;}
+   44%  { opacity: 1;}
+   50%  { opacity: 0;}
+   100% { opacity: 0;}
+}
+
+@keyframes glow {
+   0%   { opacity: 0;}
+   6%   { opacity: 1;}
+   44%  { opacity: 1;}
+   50%  { opacity: 0;}
+   100% { opacity: 0;}
+}
+
+
+@-webkit-keyframes bottom-sec {
+   0%   { height:0px; opacity: 1;}
+   100% { height:57px; opacity: 1;}
+}
+@keyframes bottom-sec {
+   0%   { height:0px; opacity: 1;}
+   100% { height:57px; opacity: 1;}
+}
+
+/*@-webkit-keyframes copy{
+   0%   { -webkit-transform:translateX(130px); transform:translateX(130px); opacity: 1;}
+   100% { -webkit-transform:translateX(-1px); transform:translateX(-1px); opacity: 1;}
+}
+
+@keyframes copy{
+   0%   { transform:translateX(130px); opacity: 1;}
+   100% { transform:translateX(-1px); opacity: 1;}
+}
+@-webkit-keyframes guarantee{
+   0%   { -webkit-transform:translateY(57px); transform:translateY(57px); opacity: 1;}
+   100% { -webkit-transform:translateY(113px); transform:translateY(113px); opacity: 1;}
+}
+@keyframes guarantee{
+   0%   { transform:translateY(57px); opacity: 1;}
+   100% { transform:translateY(113px); opacity: 1;}
+}*/

@@ -1,0 +1,154 @@
+body,h1,h2,div{
+  margin:0px;
+  padding: 0px;
+}
+
+
+#ad{
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+#banner{
+  cursor: pointer;
+  width: 970px; 
+  height: 250px; 
+  display: block;
+  background: url('images/bg.jpg') no-repeat center top;
+  visibility: visible;
+  overflow: hidden;
+  position:absolute;
+}
+#banner *{position: absolute;}
+#banner .defv{position: absolute; top: 10px; left: 13px;}
+#banner .TandC{position: absolute; top: 10px; right: 17px;}
+#banner .car{width: 374px; height: 196px; background: url('images/car-1.png') no-repeat; z-index: 3; top: 60px; left: 100px; animation: kf_car 1s ease-in-out; -webkit-animation: kf_car 1s ease-in-out}
+#banner .car_logo{left: 477px; top: 160px; animation: kf_logo 8s; -webkit-animation: kf_logo 8s;}
+#banner .big-engine{top: 86px; right: 50px; opacity: 0; animation: kf_big_engeine 2s; -webkit-animation: kf_big_engeine 2s; animation-delay: 1s; -webkit-animation-delay: 1s;}
+#banner .small-engine{top: 86px; right: 40px; opacity: 0; animation: kf_small_engeine 2s; -webkit-animation: kf_small_engeine 2s; animation-delay: 3.5s; -webkit-animation-delay: 3.5s;}
+#banner .cta-drive{right: 240px; bottom: 16px; cursor: pointer; animation: kf_cta 6s; -webkit-animation: kf_cta 6s;}
+#banner .cta-brochure{right: 46px; bottom: 16px; cursor: pointer; animation: kf_cta 6s; -webkit-animation: kf_cta 6s;}
+#banner .new-mazda{right: 72px; top: 46px; animation: kf_mazda 6s; -webkit-animation: kf_mazda 6s;}
+#banner .skyactiv{right:22px; top: 122px; opacity: 0; z-index: 2; animation: kf_skyactiv 2s; -webkit-animation: kf_skyactiv 2s; animation-delay: 5.5s; -webkit-animation-delay: 5.5s;}
+#banner .cta-close-video{cursor: pointer;height: 93px; width: 92px; display:none; background: url('images/cta-close.png'); top: 24px; right: 440px; z-index: 5;}
+#banner .price{right: 127px; top: 120px; animation: kf_price 8s; -webkit-animation: kf_price 8s;}
+#banner .cta-play-video{cursor: pointer;height: 93px; width: 92px; opacity: 1; top: 24px; right: 440px; animation: kf_video_play 7s; -webkit-animation: kf_video_play 7s; z-index: 5;}
+#banner .ie-fallback{width: 970px; height: 250px; display: block; position: absolute; z-index: 100; background: url('images/iefallback.jpg');}
+#banner #video {width: 388px; height: 220px; position: absolute; left: 545px; top: 21px; z-index: 101; display: none;}
+#banner #video video{width: 388px; height: 218px; border: 1px solid #a7a09f}
+
+
+ @keyframes kf_car{
+  0%{opacity: 0}
+  100%{opacity: 1}
+ }
+ @-webkit-keyframes kf_car{
+  0%{opacity: 0}
+  100%{ opacity: 1}
+ }
+
+  @keyframes kf_big_engeine{
+  0%{opacity: 0; right: 0}
+  20%{opacity: 1; right: 50px}
+  80%{opacity: 1; right: 50px}
+  100%{opacity: 0; right: 100px}
+ }
+
+  @-webkit-keyframes kf_big_engeine{
+  0%{opacity: 0; right: 0}
+  20%{opacity: 1; right: 50px}
+  80%{opacity: 1; right: 50px}
+  100%{opacity: 0; right: 100px}
+ }
+  @keyframes kf_small_engeine{
+  0%{opacity: 0; right: 0}
+  20%{opacity: 1; right: 40px}
+  80%{opacity: 1; right: 40px}
+  100%{opacity: 0; right: 100px}
+ }
+
+  @-webkit-keyframes kf_small_engeine{
+  0%{opacity: 0; right: 0}
+  20%{opacity: 1; right: 40px}
+  80%{opacity: 1; right: 40px}
+  100%{opacity: 0; right: 100px}
+ }
+  @keyframes kf_cta{
+  0%{bottom: 0px; opacity: 0}
+  95%{bottom: 0px; opacity: 0}
+  100%{bottom: 16px; opacity: 1}
+ }
+
+ @-webkit-keyframes kf_cta{
+  0%{bottom: 0px; opacity: 0}
+  95%{bottom: 0px; opacity: 0}
+  100%{bottom: 16px; opacity: 1}
+ }
+
+@keyframes kf_mazda{
+  0%{right: 72px; opacity: 0}
+  95%{right: 72px; opacity: 0}
+  100%{right: 72px; opacity: 1}
+ }
+
+ @-webkit-keyframes kf_mazda{
+  0%{right: 72px; opacity: 0}
+  95%{right: 72px; opacity: 0}
+  100%{right: 72px; opacity: 1}
+ }
+
+ @keyframes kf_skyactiv{
+  0%{right: -50px; opacity: 0}
+  20%{right: 22px; opacity: 1}
+  80%{right: 22px; opacity: 1}
+  100%{right: 50px; opacity: 0}
+ }
+
+  @-webkit-keyframes kf_skyactiv{
+  0%{right: -50px; opacity: 0}
+  20%{right: 22px; opacity: 1}
+  80%{right: 22px; opacity: 1}
+  100%{right: 50px; opacity: 0}
+ }
+
+
+ @keyframes kf_price{
+  0%{right: 97px; opacity: 0}
+  95%{right: 97px; opacity: 0}
+  100%{right: 127px; opacity: 1}
+ }
+
+  @-webkit-keyframes kf_price{
+  0%{right: 97px; opacity: 0}
+  95%{right: 97px; opacity: 0}
+  100%{right: 127px; opacity: 1}
+ }
+
+  @keyframes kf_video_play{
+  0%{opacity: 0; transform: scale(2,2);}
+  90%{opacity: 0; transform: scale(0,0);}
+  95%{opacity: 1; transform: scale(1.5,1.5);}
+  100%{opacity: 1; transform: scale(1,1);}
+ }
+
+  @-webkit-keyframes kf_video_play{
+   0%{opacity: 0; transform: scale(2,2);}
+  90%{opacity: 0; transform: scale(0,0);}
+  95%{opacity: 1; transform: scale(1.5,1.5);}
+  100%{opacity: 1; transform: scale(1,1);}
+ }
+
+ @keyframes kf_logo{
+  0%{opacity: 0}
+  95%{ opacity: 0}
+  100%{opacity: 1}
+ }
+
+ @-webkit-keyframes kf_logo{
+  0%{opacity: 0}
+  95%{ opacity: 0}
+  100%{opacity: 1}
+ }

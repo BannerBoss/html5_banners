@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>300x250</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="animation.css" rel="stylesheet" type="text/css">
+		<!--[if gte IE 9]> <style type="text/css">.gradient {filter: none;}/style> <![endif]-->
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="ms-logo"><img src="images/ms-logo.png"></div>
+			<div class="win-logo"><img src="images/windows-logo.png"></div>
+			
+			<div class="left-masking"></div>
+			<div class="right-masking"></div>
+
+			<!--Frame1-->
+			<div class="onedrive-logo"><img src="images/one-drive-logo.png"></div>
+			<!--Frame1-->
+
+			<!--Frame2-->
+			<div class="copy_1"><img src="images/copy1.png"></div>
+			<!--Frame2-->
+
+			<!--Frame3-->
+			<div class="icon-rain-masking"></div>
+			<div class="icon-rain"><img src="images/icon_rain.png"></div>
+			
+			<div class="roket-body-masking"></div>
+			<div class="roket">
+				<div class="roket-top"><img src="images/roket-top.png"></div>
+				<div class="roket-body"><img src="images/roket-body.png"></div>
+				<div class="flame"><img src="images/flame.png"></div>
+
+				<div class="smoke">
+					<img src="images/smoke.png">
+					<img src="images/smoke.png">
+					<img src="images/smoke.png">
+					<img src="images/smoke.png">
+				</div>
+
+			</div>
+			
+			<div class="copy_2"><img src="images/copy2.png"></div>
+			<div id="gbcount"></div>
+			<div class="zero">0</div>
+			<div class="copy_3"><img src="images/copy3.png"></div>
+			<div class="copy_4"><img src="images/copy4.png"></div>
+			<div class="copy_5"><img src="images/copy5.png"></div>
+			
+
+			<div class="roket-stage-masking"></div>
+			<div class="roket-stage"><img src="images/roket-stage.png"></div>
+			
+			<div class="roket-right-masking"></div>
+			<div class="roket-stand"><img src="images/roket-stand.png"></div>
+			<div class="roket-stand-right"><img src="images/roket-stage-right.png"></div>	
+			<div class="cloud"><img src="images/cloud.png"></div>		
+			<!--Frame3-->
+
+			<!--Frame4-->
+			<div class="cloud-single"><img src="images/cloud-big.png"></div>
+			<div class="cloud-single-with-icon"><img src="images/cloud-big-with-icon.png"></div>
+			
+			<div class="cta-wraper">
+				<div class="cta"><img src="images/cta.png"></div>
+			</div>			
+			<!--Frame4-->
+		</div>
+
+		<script type="text/javascript">
+         setTimeout(function(){ 
+                var showNumber = function(){
+                var numberArr = ['&nbsp;&nbsp;1', '&nbsp;&nbsp;2', '&nbsp;&nbsp;3','&nbsp;&nbsp;4','&nbsp;&nbsp;5','&nbsp;&nbsp;6','&nbsp;&nbsp;7','&nbsp;&nbsp;8','&nbsp;&nbsp;9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30'];
+                var element = document.getElementById('gbcount');
+                
+                element.innerHTML = numberArr[globalCounter];
+                globalCounter += 1;
+
+                if(element.innerHTML == 'undefined'){
+                    element.innerHTML = numberArr[numberArr.length-1];
+                    clearInterval(timer);
+                }
+            };
+            var globalCounter = 0;
+            var timer = setInterval(showNumber, 50);
+          }, 5700);        
+    	</script>
+
+	</body>
+
+</html>
