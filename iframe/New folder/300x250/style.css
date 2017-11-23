@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* CSS Document */
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: myFont; src: url(fonts/segoeui.ttf);
+}
+	
+#banner {
+	width: 300px; height: 250px; text-align: left; font-family: myFont; border: 1px solid #ccc; color: #ffffff;	position: absolute;	overflow: hidden;
+}
+
+#frame1 {
+	 background: url(images/bg.jpg); width: 300px; height: 250px; position: absolute; opacity: 0;
+	 @-webkit-animation: fadeIn 0.5s 0s forwards, slideOut 0.5s 3.6s forwards ;
+	 @-moz-animation: fadeIn 0.5s 0s forwards, slideOut 0.5s 3.6s forwards ;
+	 @-o-animation: fadeIn 0.5s 0s forwards, slideOut 0.5s 3.6s forwards ;
+	 animation: fadeIn 0.5s 0s forwards, slideOut 0.5s 3.6s forwards ;
+}
+
+#f1_copy1{
+	font-size: 60px; opacity: 0; position: absolute; top: 140px; left: 30px;
+	@-webkit-animation: fadeIn 0.5s 1.1s forwards ;
+	@-moz-animation: fadeIn 0.5s 1.1s forwards ;
+	@-o-animation: fadeIn 0.5s 1.1s forwards ;
+	animation: fadeIn 0.5s 1.1s forwards ;
+}
+
+#f1_copy2{
+	position: absolute;	top: 208px;	left: 50px;	font-size: 12px; opacity: 0;
+	@-webkit-animation: fadeIn 0.5s 2.1s forwards;
+	@-moz-animation: fadeIn 0.5s 2.1s forwards;
+	@-o-animation: fadeIn 0.5s 2.1s forwards;
+	animation: fadeIn 0.5s 2.1s forwards;
+}
+
+#frame2 {
+	 background: #24376D; width: 300px; height: 250px; position: absolute; left: 300px;
+	 @-webkit-animation: slideIn 0.5s 3.6s forwards;
+	 @-moz-animation: slideIn 0.5s 3.6s forwards;
+	 @-o-animation: slideIn 0.5s 3.6s forwards;
+	 animation: slideIn 0.5s 3.6s forwards;
+}
+
+#f2_copy1{
+	font-size: 20px; position: absolute; top: 20px; left: 20px;
+	@-webkit-animation: slideOut 0.5s 7s forwards;
+	@-moz-animation: slideOut 0.5s 7s forwards;
+	@-o-animation: slideOut 0.5s 7s forwards;
+	animation: slideOut 0.5s 7s forwards;
+}
+#device {
+	background:url(images/device.png); width: 134px; height: 241px; top: 5px; left: 162px; position: absolute;
+	@-webkit-animation: zoomOut 0.5s both 9.5s;
+	@-moz-animation: zoomOut 0.5s both 9.5s;
+	@-o-animation: zoomOut 0.5s both 9.5s;
+	animation: zoomOut 0.5s both 9.5s;
+}
+
+#frame3 {
+	 width: 300px; height: 250px; position: absolute; 
+}
+
+#f3_copy1{	
+	width: 130px; position: absolute; top: 50px; left: 15px; font-size: 20px; margin-left: 15px;
+	@-webkit-animation: slideInLeft 0.5s both 8s;
+	@-moz-animation: slideInLeft 0.5s both 8s;
+	@-o-animation: slideInLeft 0.5s both 8s;
+	animation: slideInLeft 0.5s both 8s;
+}
+
+#cta_btn{
+	width: 105px; height:28px; text-align: center; border: 1px solid #fff; position: absolute; top:148px; margin-left: 15px;
+	@-webkit-animation: slideInLeft 0.5s both 8s;
+	@-moz-animation: slideInLeft 0.5s both 8s;
+	@-o-animation: slideInLeft 0.5s both 8s;
+	animation: slideInLeft 0.5s both 8s;
+}
+
+#windowsLogo{
+	background:url(images/windowslogo.png); width:101px; height:14px; top: 10px; left: 10px; position: absolute;
+	@-webkit-animation: fadeIn 0.5s both 7.5s;
+	@-moz-animation: fadeIn 0.5s both 7.5s;
+	@-o-animation: fadeIn 0.5s both 7.5s;
+	animation: fadeIn 0.5s both 7.5s;
+}
+
+#nokiaLogo{
+	background:url(images/nokia_logo.png); width: 61px; height: 10px; top: 220px; left: 10px; position:absolute;
+	@-webkit-animation: fadeIn 0.5s both 7.5s;
+	@-moz-animation: fadeIn 0.5s both 7.5s;
+	@-o-animation: fadeIn 0.5s both 7.5s;
+	animation: fadeIn 0.5s both 7.5s;
+}
+
+.fallback{
+	background:url(images/fallback.jpg); width:300px; height:250px; position:absolute;
+}
+
+/* Fade In */
+@-webkit-keyframes fadeIn { 
+    0% { opacity: 0;}    100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0;}    100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+    0% { opacity: 0;}    100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0;}    100% {opacity: 1;}
+}
+
+/* Slide In */
+@-webkit-keyframes slideIn {
+    0% { left: 300px;}    100% {left: 0;}
+}
+
+@-moz-keyframes slideIn {
+    0% { left: 300px;}    100% {left: 0;}
+}
+
+@-o-keyframes slideIn {
+    0% { left: 300px;}    100% {left: 0;}
+}
+
+@keyframes slideIn {
+    0% { left: 300px;}    100% {left: 0;}
+}
+
+/* Slide In Left */
+@-webkit-keyframes slideInLeft {
+    0% { left: -200px;}    100% {left: 0px;}
+}
+
+@-moz-keyframes slideInLeft {
+    0% { left: -200px;}    100% {left: 0px;}
+}
+
+@-o-keyframes slideInLeft {
+    0% { left: -200px;}    100% {left: 0px;}
+}
+
+@keyframes slideInLeft {
+    0% { left: -200px;}    100% {left: 0px;}
+}
+
+/* Slide Out */
+@-webkit-keyframes slideOut {
+    0% { left: 0;}    100% {left: -300px;}
+}
+
+@-moz-keyframes slideOut {
+    0% { left: 0;}    100% {left: -300px;}
+}
+
+@-o-keyframes slideOut {
+    0% { left: 0;}    100% {left: -300px;}
+}
+
+@keyframes slideOut {
+    0% { left: 0;}    100% {left: -300px;}
+}
+
+/* Zoom Out */
+@-webkit-keyframes zoomOut{
+  0%{transform: scale(1);} 100%{transform: scale(0.9);}
+}
+
+@-moz-keyframes zoomOut{
+  0%{transform: scale(1);} 100%{transform: scale(0.9);}
+}
+
+@-o-keyframes zoomOut{
+  0%{transform: scale(1);} 100%{transform: scale(0.9);}
+}
+
+@keyframes zoomOut{
+  0%{transform: scale(1);} 100%{transform: scale(0.9);}
+}
