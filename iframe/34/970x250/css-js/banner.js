@@ -52,7 +52,7 @@ var tl4 = new TimelineLite();
 ---------------------------------------*/
 
 $(window).load(function(){
-    initEB();
+    // initEB();
     startAd();
 });
 

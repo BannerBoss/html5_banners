@@ -2,7 +2,7 @@
     Sizmek api
 ---------------------------------------*/
 window.onload = function(){
-    initEB();
+    // initEB();
     startAd();
 };
 

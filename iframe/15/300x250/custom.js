@@ -3,6 +3,7 @@
 //      DC STUDIO BLOCK
 //------------------------------------------------------------------------------
 
+
 // Check for enabler init
 if (!Enabler.isInitialized()) {
     Enabler.addEventListener(studio.events.StudioEvent.INIT,enablerInitialized);
