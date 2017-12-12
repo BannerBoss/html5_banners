@@ -316,12 +316,16 @@
     <script src="js/teather.min.js"></script>   
     <script src="js/bootstrap.min.js"></script>    
     <script src="js/main.js"></script>
-    <script>      
-      $('.grid').masonry({
-        itemSelector: '.grid-item', 
-        columnWidth: 25,
-        gutter: 10,
+    <script>    
+
+      $(window).load(function() {
+          $('.grid').masonry({
+            itemSelector: '.grid-item', 
+            columnWidth: 25,
+            gutter: 10,
+          });
       });
+
     </script>
   </body>
 </html>
