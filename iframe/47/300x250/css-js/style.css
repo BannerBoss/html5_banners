@@ -1,0 +1,32 @@
+/*-------------------------------------
+Reset
+---------------------------------------*/
+*           {margin: 0; padding: 0; position: absolute; -webkit-box-sizing: border-box; box-sizing: border-box;}
+#banner *   {position: absolute;}
+#banner br  {position: static;}
+img         {border: none; width: 300px;}
+
+/*-------------------------------------
+Layout
+---------------------------------------*/
+#ad             {width: 300px; height: 250px; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
+#banner         {position: absolute; display: block; width: 300px; height: 250px; overflow: hidden; cursor: pointer; visibility: hidden; background: #fff;}
+.clicktag       {width: 100%; height: 100%; z-index: 10; cursor: pointer; background:transparent; border:1px solid rgba(0, 0, 0, .25);}
+.clicktag img   {border: none; outline: none;}
+#frame_one, #frame_two, #frame_three, #frame_four, #common    {width: 100%; height: 250px;}
+
+/*-------------------------------------
+Banner Body
+---------------------------------------*/
+.mountains				{bottom: 0;}
+.box1					{width: 300px; height: 136px; top: 0; left: 0; overflow: hidden;}
+.box2					{width: 300px; height: 114px; bottom: 0px; left: 0; overflow: hidden;}
+.frm1_txt4, .frm1_txt5  {top: -136px;}
+.stroke 				{width: 50px; height: 4px; background: #000; top: 122px; left: 84px;}
+.line					{clip: rect(0px 0px 250px 0px);}
+.box3					{width: 141px; height: 250px; top: 0; left: 0; overflow: hidden;}
+.box4					{width: 159px; height: 250px; top: 0; left: 141px; overflow: hidden;}
+.frm4_txt2			    {left: -141px;}
+.top_text_line			{clip: rect(0px 0px 250px 0px);}
+.left_text_line			{clip: rect(0px 110px 250px 100px);}
+.right_text_line		{clip: rect(0px 200px 250px 0px);}

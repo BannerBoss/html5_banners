@@ -1,0 +1,55 @@
+/*-------------------------------------
+Reset
+---------------------------------------*/
+*           {margin: 0; padding: 0; position: absolute; -webkit-box-sizing: border-box; box-sizing: border-box;}
+#banner *   {position: absolute;}
+#banner br  {position: static;}
+img         {border: none; width: 300px;}
+
+/*-------------------------------------
+Layout
+---------------------------------------*/
+#ad             {width: 300px; height: 250px; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
+#banner         {position: absolute; display: block; width: 300px; height: 250px; overflow: hidden; cursor: pointer; visibility: hidden; background: #ffffff;}
+.clicktag       {width: 100%; height: 100%; z-index: 10; cursor: pointer; background:transparent; border:1px solid rgba(0, 0, 0, .25);}
+.clicktag img   {border: none; outline: none;}
+#frame_one, #frame_two, #frame_three, #frame_four, #common    {width: 100%; height: 250px;}
+
+/*-------------------------------------
+Banner Body
+---------------------------------------*/
+.bg				  	{width: 300px; height: 250px;}
+.magenta			{background: #df714e;}
+.purple				{background: #854259;}
+.skyblue			{background: #6768b5;}
+.blue			  	{background: #126eb6;}
+.green				{background: #007a80;}
+
+.triangle1		{width: 200px; left: 75px; top: -75px;}
+.triangle2		{width: 350px;}
+.triangle3		{width: 300px; left: -138px; top: 27px;}
+.cta 			    {left: 0px; top: 174px; width: 176px; height: 31px; }
+
+.text1				{width:0px; height: 37px; top: 63px; left: 16px; overflow: hidden; border-right: 2px solid #ffffff;}
+.cursor1			{width:2px; height: 37px; top: 0px;  left: 253px; overflow: hidden; background: #fff;}
+.txt1a		  	{top: -63px; left: -16px;}
+
+.text2				{width:0px; height: 38px; top: 63px; left: 16px; overflow: hidden; border-right: 2px solid #ffffff;}
+.cursor2			{width:2px; height: 38px; top: 0px; left: 235px; overflow: hidden; background: #fff;}
+.txt2					{top: -63px; left: -16px;}
+
+.text3				{width:0px; height: 38px; top: 63px; left: 16px; overflow: hidden; border-right: 2px solid #ffffff;}
+.cursor3			{width:2px; height: 38px; top: 0px; left: 144px; overflow: hidden; background: #fff;}
+.txt3a				{top: -63px; left: -16px;}
+
+.text5				{width:0px; height: 38px; top: 25px; left: 74px; overflow: hidden; border-right: 2px solid #ffffff;}
+.cursor5			{width:2px; height: 38px; top: 0px; left: 108px; overflow: hidden; background: #fff;}
+.txt5a				{top: -25px; left: -74px;}
+
+.text6				{width:0px; height: 30px; top: 105px; left: 16px; overflow: hidden; border-right: 2px solid #ffffff;}
+.cursor6			{width:2px; height: 30px; top: 0px; left: 192px; overflow: hidden; background: #fff;}
+.txt5d				{top: -105px; left: -16px;}
+
+.text7				{width:0px; height: 38px; top: 27px; left: 16px; overflow: hidden; border-right: 2px solid #ffffff;}
+.cursor7			{width:2px; height: 38px; top: 0px; left: 122px; overflow: hidden; background: #fff;}
+.txt6a				{top: -27px; left: -16px;}

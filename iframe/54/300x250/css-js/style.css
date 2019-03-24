@@ -1,0 +1,42 @@
+/*-------------------------------------
+Reset
+---------------------------------------*/
+*           {margin: 0; padding: 0; position: absolute; -webkit-box-sizing: border-box; box-sizing: border-box;}
+#banner *   {position: absolute;}
+#banner br  {position: static;}
+img         {border: none; width: 300px; height: auto;}
+
+/*-------------------------------------
+Layout
+---------------------------------------*/
+#ad             {width: 300px; height: 250px; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
+#banner         {position: absolute; display: block; width: 300px; height: 250px; overflow: hidden; cursor: pointer; visibility: hidden; background: #ffffff;}
+.clicktag       {width: 100%; height: 100%; z-index: 10; cursor: pointer; background:transparent; border:1px solid #d2d2d2;}
+.clicktag img   {border: none; outline: none;}
+#frame_one, #frame_two, #frame_three, #frame_four, #common    {width: 100%; height: 250px;}
+
+/*-------------------------------------
+Banner Body
+---------------------------------------*/
+/*.pic2, .bg		{left:160px;}*/
+.green_box		{background: url("../images/pattern.jpg"); width: 160px; height: 250px; top: 0px; left: 140px;}
+.green_box2		{background: url("../images/pattern.jpg"); width: 160px; height: 250px; top: 0px; left: 140px;}
+
+.green_bar1		{background: url("../images/pattern.jpg"); width: 5px;   height: 250px; top: 0px; left: 140px;}
+.green_bar2		{background: url("../images/pattern.jpg"); width: 10px;  height: 250px; top: 0px; left: 140px;}
+.green_bar3		{background: url("../images/pattern.jpg"); width: 15px;  height: 250px; top: 0px; left: 140px;}
+.green_bar4		{background: url("../images/pattern.jpg"); width: 20px;  height: 250px; top: 0px; left: 140px;}
+.green_bar5		{background: url("../images/pattern.jpg"); width: 25px;  height: 250px; top: 0px; left: 140px;}
+.green_bar6		{background: url("../images/pattern.jpg"); width: 30px;  height: 250px; top: 0px; left: 140px;}
+
+.purple_box		{background: #355270; width: 160px; height: 250px; top: 0px; left: 140px;}
+.purple_box2	{background: #355270; width: 160px; height: 250px; top: 0px; left: 140px;}
+
+.green_bar7 	{background: url("../images/pattern.jpg"); width: 5px;   height: 250px; top: 0px; left: 140px;}
+.green_bar8 	{background: url("../images/pattern.jpg"); width: 10px;  height: 250px; top: 0px; left: 140px;}
+.green_bar9 	{background: url("../images/pattern.jpg"); width: 15px;  height: 250px; top: 0px; left: 140px;}
+.green_bar10 	{background: url("../images/pattern.jpg"); width: 20px;  height: 250px; top: 0px; left: 140px;}
+.green_bar11 	{background: url("../images/pattern.jpg"); width: 25px;  height: 250px; top: 0px; left: 140px;}
+.green_bar12 	{background: url("../images/pattern.jpg"); width: 30px;  height: 250px; top: 0px; left: 140px;}
+
+.cta_hover		{opacity: 0; display: none; visibility: hidden;}

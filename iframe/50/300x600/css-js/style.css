@@ -1,0 +1,43 @@
+/*-------------------------------------
+Reset
+---------------------------------------*/
+*           {margin: 0; padding: 0; position: absolute; -webkit-box-sizing: border-box; box-sizing: border-box;}
+#banner *   {position: absolute;}
+#banner br  {position: static;}
+img         {border: none;}
+
+/*-------------------------------------
+Layout
+---------------------------------------*/
+#ad             {width: 300px; height: 600px; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
+#banner         {position: absolute; display: block; width: 300px; height: 600px; overflow: hidden; cursor: pointer; visibility: hidden; background: #fff;}
+.clicktag       {width: 100%; height: 100%; z-index: 10; cursor: pointer; background:transparent; border:1px solid #666666;}
+.clicktag img   {border: none; outline: none;}
+
+/*-------------------------------------
+Banner Body
+---------------------------------------*/
+#frame_one,
+#frame_two, #frame_three, #frame_four, #common    			  {width: 100%; height: 600px;}
+.fifa18_logo_horiz_flat 						  			  {width: 195px; height: 52px; top: 27px; left: 51px; z-index: 1;}	
+.ronaldo1 										  			  {left: -125px;}
+.ronaldo2 										  			  {left: 20px; top: 22px;}
+.ronaldo3 										  			  {left: -47px;}
+.text1 											  			  {left: 45px;}
+.text2 											  			  {left: 0px; top: 22px;}
+.text3											  			  {left: -20px;}
+
+.sony_flow, .sony_bing							  			  {z-index: 2;}
+.hover_bg										  			  {width: 100%; height: 100%; background: #201c55; opacity: 0;}
+.text4											  			  {opacity: 0;}
+.cta											  			  {z-index: 1;}
+.bottom_effect1, .bottom_effect2  			 				  {opacity: 0;}
+.bottom_effect3, .bottom_effect4				  			  {opacity: 0;}
+.top_effect1, .top_effect2, .top_effect3, .top_effect4 		  {opacity: 0}
+
+.top_movement												  {width: 100%; height: 100%;}
+.bottom_movement											  {width: 100%; height: 100%; top: 570px; left: -50px;}
+.line1														  {top: 210px; left: -110px;}
+.line3														  {top: 190px; left: -150px;}
+.line2														  {top: 200px; left: -245px; opacity: .7}
+.line4														  {top: 240px; left: -255px; }

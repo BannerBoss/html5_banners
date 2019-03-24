@@ -1,0 +1,31 @@
+/*-------------------------------------
+Reset
+---------------------------------------*/
+*           {margin: 0; padding: 0; position: absolute; -webkit-box-sizing: border-box; box-sizing: border-box;}
+#banner *   {position: absolute;}
+#banner br  {position: static;}
+img         {border: none;}
+
+/*-------------------------------------
+Layout
+---------------------------------------*/
+#ad             {width: 300px; height: 250px; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
+#banner         {position: absolute; display: block; width: 300px; height: 250px; overflow: hidden; cursor: pointer; visibility: hidden; background: #fff;}
+.clicktag       {width: 100%; height: 100%; z-index: 10; cursor: pointer; background:transparent; border:1px solid #a8a8a8; opacity: .6}
+.clicktag img   {border: none; outline: none; top: -1px; left: -1px}
+#frame_one, #frame_two, #frame_three, #frame_four, #common    {width: 100%; height: 250px;}
+
+/*-------------------------------------
+Banner Body
+---------------------------------------*/
+#frame_one  				{z-index: 6; background: #ffffff;}
+#frame_two					{z-index: 5;}
+#frame_three				{background: #ffffff; z-index: 4;}
+#frame_four					{z-index: 3;}
+
+
+.green_bg					{background: #72c3d5; width: 300px; height: 250px;}
+.box						{clip: rect(0px, 300px, 250px, 300px);}
+.box1						{clip: rect(0px, 300px, 250px, 300px);}
+.logo_big					{top: 97px; left: 23px;}
+.logos, .logos1				{top: 186px; left: 35px;}

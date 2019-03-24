@@ -1,21 +1,27 @@
 body                    {min-height: 75rem;}
 img                     {max-width:100%;height:auto}
 .navbar                 {margin-bottom: 0; }
-.jumbotron              {padding-top: 6rem; padding-bottom: 6rem; margin-bottom: 0; background-color: #fff; } 
+ul 						{margin: 0; padding: 0}
+ul li 					{list-style: none;}
+.jumbotron              {padding-top: 6rem; padding-bottom: 6rem; margin-bottom: 0; background-color: #88bb66; color: #fff;} 
 .jumbotron p:last-child {margin-bottom: 0; } 
 .jumbotron-heading      {font-weight: 300; } 
-.jumbotron .container   {max-width: 40rem; } 
-.album                  {min-height: 50rem; padding-top: 3rem; padding-bottom: 3rem; background-color: #f7f7f7;} 
+.jumbotron .container   {max-width: 40rem;} 
+.album                  {min-height: 50rem; padding-top: 3rem; padding-bottom: 3rem; background-color: #222;} 
 .album img   			{width: 100%;}
 .magnifier              {background:rgba(237,49,49,.7); position:absolute; text-align: center; width: 100%; height: 100%; top:0px; left:0px; bottom:0px; right:0px; opacity:0; -webkit-transition:all .3s ease-in-out; -moz-transition:all .3s ease-in-out; -ms-transition:all .3s ease-in-out; -o-transition:all .3s ease-in-out; transition:all .3s ease-in-out;}
 .boxed                  {position: absolute; top: 50%; left: 50%; margin-left: -25px; margin-top: -25px; color:#ffffff; border: 2px solid #ffffff; padding: 5px 10px; font-weight: 700; text-transform: uppercase;}
 a:hover .magnifier      {opacity:1; }
 .grid-item 				{margin-bottom: 5px; }
 .scrolltop 				{display:none; width:100%; margin:0 auto; position:fixed; bottom:20px; right:10px; } 
-.scroll 				{position:absolute; right:20px; bottom:20px; background:#b2b2b2; background:rgba(178,178,178,0.7); padding:20px; text-align: center; margin: 0 0 0 0; cursor:pointer; transition: 0.5s; -moz-transition: 0.5s; -webkit-transition: 0.5s; -o-transition: 0.5s; } 
+.scroll 				{position:absolute; right:20px; bottom:20px; background:#b2b2b2; background:rgba(178,178,178,0.7); padding:10px; text-align: center; margin: 0 0 0 0; cursor:pointer; transition: 0.5s; -moz-transition: 0.5s; -webkit-transition: 0.5s; -o-transition: 0.5s; } 
 .scroll:hover 			{background:rgba(178,178,178,1.0); transition: 0.5s; -moz-transition: 0.5s; -webkit-transition: 0.5s; -o-transition: 0.5s; } 
 .scroll:hover .fa 		{padding-top:-10px; } 
 .scroll .fa 			{font-size:30px; margin-top:-5px; margin-left:1px; transition: 0.5s; -moz-transition: 0.5s; -webkit-transition: 0.5s; -o-transition: 0.5s; }
-footer                  {padding-top: 3rem; padding-bottom: 3rem; } 
+footer                  {padding-top: 3rem; padding-bottom: 3rem; background-color: #88bb66; color: #fff;} 
 footer p                {margin-bottom: .25rem; }
+.text-muted				{color: #fff !important;}
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-toggler:focus, .navbar-inverse .navbar-toggler:hover {
+	color: #222;
+}
 

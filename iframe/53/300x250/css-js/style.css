@@ -1,0 +1,39 @@
+/*-------------------------------------
+Reset
+---------------------------------------*/
+*           {margin: 0; padding: 0; position: absolute; -webkit-box-sizing: border-box; box-sizing: border-box;}
+#banner *   {position: absolute;}
+#banner br  {position: static;}
+img         {border: none; width: 300px;}
+
+/*-------------------------------------
+Layout
+---------------------------------------*/
+#ad             {width: 300px; height: 250px; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
+#banner         {position: absolute; display: block; width: 300px; height: 250px; overflow: hidden; cursor: pointer; visibility: hidden; background: #101010; border:1px solid rgba(0, 0, 0, .25);}
+.clicktag       {width: 100%; height: 100%; z-index: 10; cursor: pointer; background:transparent;}
+.clicktag img   {border: none; outline: none;}
+#frame_one, #frame_two, #frame_three, #frame_four, #common    {width: 100%; height: 250px;}
+
+/*-------------------------------------
+Banner Body
+---------------------------------------*/
+.line							  {clip: rect(250px 300px 250px 0px);}
+.be, .confident			{-webkit-transform: scale(0.45); transform: scale(0.45);}
+.card1							{left:45px;}
+.card2							{left:-44px;}
+.frames							{left:0px; top:0px;}
+.text2_box					{left:0px; top:0px; width:150px; height:250px; overflow:hidden;}
+.text3_box					{left:150px; top:0px; width:150px; height:250px; overflow:hidden;}
+.txt3a, .txt3				{left:-150px;}
+.text_be						{left:0px; top:0px; width:45px; height:250px; overflow:hidden;}
+.text_alpha					{left:45px; top:0px; width:100px; height:250px; overflow:hidden;}
+.alpha							{left:-45px;}
+.memory_card				{left:66px; top:66px; width:168px; height:120px; overflow:hidden;}
+.images, .cards			{width:168px; height:120px;}
+.box        				{width: 104px; height: 22px; left: 15px; top:211px;}
+.top        				{width: 100%; height: 1px; background: #fff; top: 0; left: 0;}
+.left        				{width: 1px; height: 100%; background: #fff; bottom: 0; left: 0;}
+.bottom       			{width: 100%; height: 1px; background: #fff; bottom: 0; right: 0;}
+.right       				{width: 1px; height: 100%; background: #fff; top: 0; right: 0;}
+.cta, .cta_hover		{left:0;}

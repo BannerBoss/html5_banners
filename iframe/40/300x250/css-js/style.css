@@ -1,0 +1,31 @@
+/*-------------------------------------
+Reset
+---------------------------------------*/
+*           {margin: 0; padding: 0; position: absolute; -webkit-box-sizing: border-box; box-sizing: border-box;}
+#banner *   {position: absolute;}
+#banner br  {position: static;}
+img         {border: none; width: 300px;}
+
+/*-------------------------------------
+Layout
+---------------------------------------*/
+#ad             {width: 300px; height: 250px; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
+#banner         {position: absolute; display: block; width: 300px; height: 250px; overflow: hidden; cursor: pointer; visibility: hidden; background: #20224f;}
+.clicktag       {width: 100%; height: 100%; z-index: 10; cursor: pointer; background:transparent; border:1px solid rgba(0, 0, 0, .25);}
+.clicktag img   {border: none; outline: none;}
+#frame_one, #frame_two, #frame_three, #frame_four, #common    {width: 100%; height: 250px;}
+
+/*-------------------------------------
+Banner Body
+---------------------------------------*/
+.snow					 {top: 68px; left: 122px; width: 317px; height: 277px; -webkit-transform: scale(.1); transform: scale(.1);}
+.snow1				 {top: 68px; left: 122px; width: 317px; height: 277px; -webkit-transform: scale(.1); transform: scale(.1);}
+.snow2				 {top: 68px; left: 122px; width: 317px; height: 277px; -webkit-transform: scale(.1); transform: scale(.1);}
+.snow3				 {top: 68px; left: 122px; width: 317px; height: 277px; -webkit-transform: scale(.1); transform: scale(.1);}
+.snow4				 {top: 68px; left: 122px; width: 317px; height: 277px; -webkit-transform: scale(.1); transform: scale(.1);}
+.snow5				 {top: 68px; left: 122px; width: 317px; height: 277px; -webkit-transform: scale(.1); transform: scale(.1);}
+.snow6				 {top: 68px; left: 122px; width: 317px; height: 277px; -webkit-transform: scale(.1); transform: scale(.1);}
+.snow7				 {top: 68px; left: 122px; width: 317px; height: 277px; -webkit-transform: scale(.1); transform: scale(.1);}
+.bg2					 {background: #20224f; width: 300px; height: 250px;}
+.txt4 				 {left: 81px; top: 77px; width: 138px; height: 46px;}
+

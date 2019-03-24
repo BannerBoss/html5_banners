@@ -1,0 +1,25 @@
+/*-------------------------------------
+Reset
+---------------------------------------*/
+*           {margin: 0; padding: 0; position: absolute; -webkit-box-sizing: border-box; box-sizing: border-box;}
+#banner *   {position: absolute;}
+#banner br  {position: static;}
+img         {border: none; width: 300px;}
+
+/*-------------------------------------
+Layout
+---------------------------------------*/
+#ad             {width: 300px; height: 250px; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
+#banner         {position: absolute; display: block; width: 300px; height: 250px; overflow: hidden; cursor: pointer; visibility: hidden; background: #ffffff;}
+.clicktag       {width: 100%; height: 100%; z-index: 10; cursor: pointer; background:transparent; border:1px solid rgba(0, 0, 0, .25);}
+.clicktag img   {border: none; outline: none;}
+#frame_one, #frame_two, #frame_three, #frame_four, #common    {width: 100%; height: 250px;}
+
+/*-------------------------------------
+Banner Body
+---------------------------------------*/
+.black_bg		{width: 300px; height: 250px; background: #000000; top: 0; left: 0;}
+.guage			{width: 3900px; top: 0; left: 0;}
+.white_dash		{left: 44px; top: 24px; width: 26px; height: 5px; background: #ffffff;}
+.black_dash		{left: 44px; top: 24px; width: 26px; height: 5px; background: #000000;}
+.cta			{left: 44px; top: 171px; width: 93px; height: 26px; clip: rect(0px 0px 250px 0px);}
