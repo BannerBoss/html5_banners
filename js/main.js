@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	
 	$(".various").fancybox({
 		maxWidth	: 300,
 		maxHeight	: 600,
@@ -91,4 +92,11 @@ $(document).ready(function() {
 	  modal.find('.modal-title').text('New message to ' + recipient)
 	  modal.find('.modal-body input').val(recipient)
 	})
+
+
+	// var tl1 = new TimelineMax({paused:true});
+
+ //    tl1.staggerTo(".color-div", 1, {y:-100, repeat:-1, yoyo:true, ease:Sine.easeOut}, .4, "Same");
+
+ //    tl1.play();
 });

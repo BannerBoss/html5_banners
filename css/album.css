@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
 body                    {min-height: 75rem;}
 img                     {max-width:100%;height:auto}
 .navbar                 {margin-bottom: 0; }
 ul 						{margin: 0; padding: 0}
 ul li 					{list-style: none;}
-.jumbotron              {padding-top: 6rem; padding-bottom: 6rem; margin-bottom: 0; background-color: #88bb66; color: #fff;} 
-.jumbotron p:last-child {margin-bottom: 0; } 
-.jumbotron-heading      {font-weight: 300; } 
+.jumbotron              {position: relative; padding-top: 6rem; padding-bottom: 6rem; margin-bottom: 0; background: #000; color: #fff; overflow: hidden;} 
+.color-div				{position: absolute; top: 0; background-color: #88bb66; width: 20%; height: 100%;}
+.color-div:nth-child(1)	{left: 0;   opacity: .2;}
+.color-div:nth-child(2)	{left: 20%; opacity: .3;}
+.color-div:nth-child(3)	{left: 40%; opacity: .5;}
+.color-div:nth-child(4)	{left: 60%; opacity: .7;}
+.color-div:nth-child(5)	{left: 80%; opacity: .9;}
+.jumbotron p:last-child {margin-bottom: 0;} 
+.jumbotron-heading      {font-weight: 300; font-family: 'Poppins', sans-serif;} 
 .jumbotron .container   {max-width: 40rem;} 
 .album                  {min-height: 50rem; padding-top: 3rem; padding-bottom: 3rem; background-color: #222;} 
 .album img   			{width: 100%;}
@@ -14,11 +22,11 @@ ul li 					{list-style: none;}
 a:hover .magnifier      {opacity:1; }
 .grid-item 				{margin-bottom: 5px; }
 .scrolltop 				{display:none; width:100%; margin:0 auto; position:fixed; bottom:20px; right:10px; } 
-.scroll 				{position:absolute; right:20px; bottom:20px; background:#b2b2b2; background:rgba(178,178,178,0.7); padding:10px; text-align: center; margin: 0 0 0 0; cursor:pointer; transition: 0.5s; -moz-transition: 0.5s; -webkit-transition: 0.5s; -o-transition: 0.5s; } 
+.scroll 				{position:absolute; width: 40px; height: 40px; border-radius: 50%; right:20px; bottom:20px; background:#b2b2b2; background:rgba(178,178,178,0.7); padding:10px; text-align: center; margin: 0 0 0 0; cursor:pointer; transition: 0.5s; -moz-transition: 0.5s; -webkit-transition: 0.5s; -o-transition: 0.5s; } 
 .scroll:hover 			{background:rgba(178,178,178,1.0); transition: 0.5s; -moz-transition: 0.5s; -webkit-transition: 0.5s; -o-transition: 0.5s; } 
 .scroll:hover .fa 		{padding-top:-10px; } 
-.scroll .fa 			{font-size:30px; margin-top:-5px; margin-left:1px; transition: 0.5s; -moz-transition: 0.5s; -webkit-transition: 0.5s; -o-transition: 0.5s; }
-footer                  {padding-top: 3rem; padding-bottom: 3rem; background-color: #88bb66; color: #fff;} 
+.scroll .fa 			{font-size:30px; line-height: 30px; margin-top: -15px; transition: 0.5s; -moz-transition: 0.5s; -webkit-transition: 0.5s; -o-transition: 0.5s; }
+footer                  {position: relative; padding-top: 3rem; padding-bottom: 3rem; background-color: #000; color: #fff;} 
 footer p                {margin-bottom: .25rem; }
 .text-muted				{color: #fff !important;}
 .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-toggler:focus, .navbar-inverse .navbar-toggler:hover {
